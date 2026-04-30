@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MSFT 投資分析樹 — Standard 4×3 · Mode 2 Thesis-Axis</title>
+<title>MSFT Investment Thesis — Post-Q3 FY26 Update · Standard 4×3 · Mode 2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -537,6 +537,54 @@ h3 { font-size: 18px; font-weight: 600; margin: 28px 0 12px; }
   margin-bottom: 4px;
   display: block;
 }
+
+/* Q3 INJECT callout — versioned post-event update layer */
+.inject {
+  margin-top: 10px;
+  padding: 11px 14px 10px;
+  background: linear-gradient(90deg, rgba(212,165,116,.08), rgba(212,165,116,.02) 70%);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-dim);
+  font-family: var(--serif);
+}
+.inject .inject-label {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block;
+}
+.inject strong { color: var(--text); font-weight: 600; }
+.inject em { color: var(--gold); font-style: normal; font-weight: 600; }
+.inject-actual {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(212,165,116,.14);
+  color: var(--gold);
+  margin: 0 2px;
+}
+.inject-move {
+  display: inline-block;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+.inject-move.up { background: rgba(52,211,153,.14); color: var(--green); }
+.inject-move.down { background: rgba(248,113,113,.12); color: var(--red); }
+.inject-move.same { background: rgba(156,163,175,.14); color: var(--text-muted); }
 
 /* Tree visualization */
 .tree-viz{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:28px 20px;margin-bottom:22px;font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--text-dim);overflow-x:auto}
@@ -1388,7 +1436,7 @@ footer strong { color: var(--text-dim); }
     <a href="#L1B" class="sub-indent">L1B CapEx → ROIC</a>
     <a href="#L1C" class="sub-indent">L1C OpenAI + Exogenous</a>
     <a href="#L1D" class="sub-indent">L1D Copilot Monetization</a>
-    <a href="#tree">八、投資樹總結</a>
+    <a href="#tree">八、論點架構總結</a>
     <a href="#triggers">九、Triggers / Red Flags / Metrics / Catalysts</a>
     <a href="#inverted">十、Inverted 3-Scenario（核心）</a>
     <a href="#cascade" class="sub-indent">　└ 條件機率 Cascade</a>
@@ -1400,26 +1448,26 @@ footer strong { color: var(--text-dim); }
 
 <!-- Header -->
 <div class="article-head">
-  <div class="article-eyebrow">◆ MECE Analyst Tree · 投資分析樹</div>
-  <h1>MSFT <em>Microsoft Corporation</em> 投資分析樹</h1>
-  <div class="subtitle">全球最大軟體企業與第二大市值公司 · 雲端 + AI 轉型中期 · 2026 為「$100B+ CapEx 週期能否轉化為 ROIC 一致之報酬」的驗證年。Q3 FY26 April 29 為單一最重要事件。</div>
+  <div class="article-eyebrow">◆ MECE Analyst Tree · 投資論點 · Post-Q3 FY26 Update</div>
+  <h1>MSFT <em>Microsoft Corporation</em> 投資論點 · Investment Thesis</h1>
+  <div class="subtitle">全球最大軟體企業與第二大市值公司 · Q3 FY26 print 廣泛優於預期：Azure 39% cc 重新加速（Q4 39-40% guide / H2 calendar 2026 modest acceleration）、AI ARR $37B（+123% YoY）首次披露、Copilot 突破 20M 付費座位（週活與 Outlook 同級）、Apr 27 OpenAI 重組為合作型 outcome。然 Q3 CapEx $31.9B sequential 下降為 timing artifact 而非 cycle peak — Q4 guide >$40B、calendar 2026 ~$190B、"constrained at least through 2026"。框架經 post-call comprehensive read 後 Bear 機率由 33% 下修至 28%。</div>
   <div class="upgrades">
     <span class="upg variant">Standard 4×3 + 1 Exogenous · 13 Leaves</span>
     <span class="upg mode">Mode 2 · Thesis-Axis</span>
     <span class="upg" style="background: rgba(167,139,250,.15); color: var(--purple); border-color: rgba(167,139,250,.4);">Three Failure Modes Cascade</span>
     <span class="upg">Inverted 3-Scenario Primary Decision</span>
-    <span class="upg">Q3 Catalyst: April 29, 2026</span>
+    <span class="upg" style="background: rgba(212,165,116,.18); color: var(--gold); border-color: rgba(212,165,116,.45);">Post-Q3 FY26 Update · Apr 29, 2026</span>
   </div>
   <div class="article-meta">
-    <span>📅 Snapshot 2026-04-24</span>
+    <span>📅 Snapshot 2026-04-29 · Q3 FY26 print</span>
     <span class="dot"></span>
-    <span>💼 Spot $421 · Consensus PT $578</span>
+    <span>💼 Pre-print spot $421 · AH 待觀察</span>
     <span class="dot"></span>
     <span>📊 Signals <strong>4✅ 8⚠️ 1❌</strong></span>
     <span class="dot"></span>
-    <span>⚡ Options Implied ±5.6% (~$24)</span>
+    <span>⚡ Q3 EPS $4.27 / 共識 $4.06 / Azure cc 39% / AI ARR $37B</span>
     <span class="dot"></span>
-    <span>🎯 Tree EV <strong>$498</strong> · Mispricing <strong>+18%</strong></span>
+    <span>🎯 Tree EV <strong>$509</strong> · Mispricing <strong>+21%</strong></span>
   </div>
 </div>
 
@@ -1460,7 +1508,7 @@ footer strong { color: var(--text-dim); }
       </div>
       <div class="ta-cell c">
         <h4>L1C · OpenAI Economics + Exogenous Risk</h4>
-        <p>2030 合約鎖定能否抵禦 MAI 執行時序、OpenAI 多雲壓力、與外生監管衝擊？包含 endogenous 三葉與獨立 H-C1.4 永久 ❌ 外生政策風險葉。</p>
+        <p>2030 合約鎖定能否抵禦 MAI 執行時序、OpenAI 多雲壓力、與外生監管衝擊？包含 endogenous 三項假設與獨立 H-C1.4 永久 ❌ 外生政策風險假設。</p>
       </div>
       <div class="ta-cell d">
         <h4>L1D · Copilot Monetization</h4>
@@ -1540,15 +1588,15 @@ footer strong { color: var(--text-dim); }
   <h2>五、核心假設 <span class="h2-en">Core Hypothesis · H-0</span></h2>
   <div class="h0">
     <div class="h0-label">◆ H-0 · FALSIFIABLE CORE HYPOTHESIS</div>
-    <h3>2026 為 MSFT 的「<em>四支柱條件機率 cascade 是否被市場過度悲觀地建模</em>」驗證年。若 Q3 FY26 Azure cc ≥ 36%（rolling 三季 ≥ 37%）且 Intelligent Cloud op margin ≥ 40%（capacity utilization 驗證）且 CapEx FY27 directional 措辭顯示「moderate」或「normalize」，則市場隱含的 55-56% Bear 機率為過度定價；若任一破裂並觸發跨支柱 cascade（H-A1.1 → H-B1.1 → H-C1.2），則市場類比 Meta Reality Labs / Cisco 2001 之 ROIC 失靈情境部分驗證，但本分析樹下 Bear 仍受 $625B RPO 與 OpenAI exclusivity 結構性鎖定限制。</h3>
-    <p>此非方向性問題（多頭 vs 空頭），而是 <strong style="color: var(--gold);">機率分佈是否可辯護</strong>之審問。本分析樹透過 Section 十 三個獨立失敗模式 cascade 顯式建模 Bear 路徑：<strong>Mode 1</strong> OpenAI 多雲外逃（gatekeeper H-C1.1 ❌，trigger P ≈ 13%）、<strong>Mode 2</strong> 純總體經濟衰退（gatekeeper 美國衰退 / IT 預算凍結，trigger P ≈ 15%，含 L1D 蠶食 spike + MPC bleed-over 之獨立路徑）、<strong>Mode 3</strong> 監管加速（gatekeeper H-C1.4 acute，trigger P ≈ 9%）。三模式為現實中之獨立 trigger events，皆能觸發 Bear 情境。Bear 機率合計 33%，與市場隱含 55-56% 形成 23pp 結構性差距。Q3 April 29 為揭示之第一幕，其更新將透過 Mode 1 + Mode 2 同步傳遞至所有四支柱；Mode 3 為長期 monitoring 軸。</p>
+    <h3>2026 為 MSFT 的「<em>四支柱條件機率 cascade 是否被市場過度悲觀地建模</em>」驗證年。若 Q3 FY26 Azure cc ≥ 36%（rolling 三季 ≥ 37%）且 Intelligent Cloud op margin ≥ 40%（capacity utilization 驗證）且 CapEx FY27 directional 措辭顯示「moderate」或「normalize」，則市場隱含的 55-56% Bear 機率為過度定價；若任一破裂並觸發跨支柱 cascade（H-A1.1 → H-B1.1 → H-C1.2），則市場類比 Meta Reality Labs / Cisco 2001 之 ROIC 失靈情境部分驗證，但本論點下 Bear 仍受 $625B RPO 與 OpenAI exclusivity 結構性鎖定限制。</h3>
+    <p>此非方向性問題（多頭 vs 空頭），而是 <strong style="color: var(--gold);">機率分佈是否可辯護</strong>之審問。本論點透過 Section 十 三個獨立失敗模式 cascade 顯式建模 Bear 路徑：<strong>Mode 1</strong> OpenAI 多雲外逃（gatekeeper H-C1.1 ❌，trigger P ≈ 13%）、<strong>Mode 2</strong> 純總體經濟衰退（gatekeeper 美國衰退 / IT 預算凍結，trigger P ≈ 15%，含 L1D 蠶食 spike + MPC bleed-over 之獨立路徑）、<strong>Mode 3</strong> 監管加速（gatekeeper H-C1.4 acute，trigger P ≈ 9%）。三模式為現實中之獨立 trigger events，皆能觸發 Bear 情境。Bear 機率合計 33%，與市場隱含 55-56% 形成 23pp 結構性差距。Q3 April 29 為揭示之第一幕，其更新將透過 Mode 1 + Mode 2 同步傳遞至所有四支柱；Mode 3 為長期 monitoring 軸。</p>
   </div>
 </section>
 
 <!-- 六、投資假設地圖 -->
 <section id="map">
   <h2>六、投資假設地圖 <span class="h2-en">Hypothesis Map · 4 Pillars × 3 Leaves + 1 Exogenous = 13 Hypotheses</span></h2>
-  <p class="lede">Mode 2 thesis-axis — 每個支柱為一條獨立投資命題。每個支柱標題含 🔍 kitchen-table question + 對應框架。L1C 包含獨立第四葉 H-C1.4，標記為永久 ❌ 結構性外生風險（反壟斷 + 主權 AI），參照外生政策風險於管理層拒絕評論時保留之處理慣例。</p>
+  <p class="lede">Mode 2 thesis-axis — 每個支柱為一條獨立投資命題。每個支柱標題含 🔍 kitchen-table question + 對應框架。L1C 包含獨立第四個假設 H-C1.4，標記為永久 ❌ 結構性外生風險（反壟斷 + 主權 AI），參照外生政策風險於管理層拒絕評論時保留之處理慣例。</p>
 
   <div class="hyp-map">
     <table>
@@ -1608,11 +1656,11 @@ footer strong { color: var(--text-dim); }
     <div class="sat-pillars">
       <div class="sat-p L1A"><span class="sat-tag">L1A Azure</span><span class="sat-count">2✅ 1⚠️ 0❌</span></div>
       <div class="sat-p L1B"><span class="sat-tag">L1B CapEx</span><span class="sat-count">1✅ 2⚠️ 0❌</span></div>
-      <div class="sat-p L1C"><span class="sat-tag">L1C OpenAI</span><span class="sat-count">1✅ 2⚠️ 1❌</span></div>
-      <div class="sat-p L1D"><span class="sat-tag">L1D Copilot</span><span class="sat-count">0✅ 3⚠️ 0❌</span></div>
+      <div class="sat-p L1C"><span class="sat-tag">L1C OpenAI</span><span class="sat-count">0✅ 3⚠️ 1❌</span></div>
+      <div class="sat-p L1D"><span class="sat-tag">L1D Copilot</span><span class="sat-count">1✅ 2⚠️ 0❌</span></div>
     </div>
     <div class="sat-note">
-      信號分佈反映四支柱結構性異質：L1A 綠重心（Azure capacity-constrained 為需求強訊號）；L1B 黃重心（CapEx-to-ROIC 時序模糊，採三季滾動驗證）；L1C 含永久 ❌ 之外生政策風險（反壟斷 + 主權 AI），endogenous 三葉維持 1 綠 2 黃；L1D 全黃反映 Copilot forward-looking platform-monetization 之缺乏歷史財務驗證。<em>跨支柱 coupling 透過 Section 十 條件機率 cascade 顯式建模</em>。<strong>信號計數為論點信心之方向指標，非買賣評級 — 最終決策依條件機率 cascade + Inverted 3-Scenario 張力點判讀。</strong>
+      Q3 印出後信號分佈（post-call comprehensive read）：L1A 維持綠重心（Azure 39% cc 重新加速 + Q4 39-40% cc guide + H2 calendar 2026 modest acceleration）；L1B 維持黃重心（H-B1.2 ⚠️ 維持 — Q3 sequential 下降為 timing artifact，Q4 CapEx >$40B + calendar 2026 ~$190B + "constrained at least through 2026"，cycle peak 尚未可見）；L1C 由綠+黃+紅改為全黃+紅（H-C1.1 ✅→⚠️，Apr 27 OpenAI exclusivity 解除為形式 kill 但經濟條款於 MSFT 為實質利好，Hood: "predictability of rev share through 2030 is a real positive"）；L1D 由全黃改善為綠+黃（H-D1.1 ⚠️→✅，Copilot 突破 20M + 250% YoY seat add + AI ARR $37B / +123% YoY + 週活與 Outlook 同級）。<em>淨變化：13 個假設中 4 個假設狀態變化（2 升 1 降 1 nuance），press release 與 call 之雙層讀取為 Q3 之完整 post-event reading</em>。<strong>信號計數為論點信心之方向指標，非買賣評級 — 最終決策依條件機率 cascade + Inverted 3-Scenario 張力點判讀。</strong>
     </div>
   </div>
 
@@ -1648,6 +1696,14 @@ footer strong { color: var(--text-dim); }
             <strong class="label">跨支柱耦合</strong>
             45% Commercial RPO 與 OpenAI 綁定意味著 H-A1.1 與 H-C1.1 高度相關。若 OpenAI 觸發多雲外逃（H-C1.1 失敗），<strong>H-A1.1 將自動降級為黃燈</strong>並可能進一步降級為紅燈 — 詳見 Section 十 條件機率 cascade。Fairwater 等預先建置 DC 將同步面臨產能過剩風險。
           </div>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29 · post-call comprehensive read</span>
+            Q3 Azure cc 印出 <span class="inject-actual">39%</span>，超出 37-38% guide 上緣 +1pp，並從 Q2 之 38% cc <strong>重新加速</strong>。GAAP +40% / cc +39%，連續 9 季 ≥ 30% 趨勢延續。<br><br>
+            <strong>Conf call 補充之 forward visibility</strong>：(a) Q4 FY26 Azure cc guide <span class="inject-actual">39-40%</span> against strong prior comp（與 Q3 同水平）；(b) calendar H2 2026 (= Q1+Q2 FY27) 預期 <em>"modest acceleration"</em> — 隱含 cc &gt;40%；(c) 「we expect to remain constrained at least through 2026」— capacity 對應之 demand 持續存在。<br><br>
+            <strong>Capacity 執行</strong>：Fairwater Wisconsin <em>"came online earlier this month, six weeks ahead of schedule"</em>；Maia 200 AI accelerator 提供 <em>30%+ tokens-per-dollar 改善</em>，已部署於 Iowa 與 Arizona DC；GPU dock-to-live time 較年初減少 ~20%；inference throughput 提升 40%（across Copilot）。<br><br>
+            <strong>客戶採用深化</strong>：>10K 客戶於 Foundry 使用多模型；Anthropic + OpenAI 多模型使用 2x QoQ；300+ 客戶將於本年於 Foundry 處理 1T+ tokens（+30% QoQ）；35K paid Fabric 客戶 (+60% YoY)；15K 客戶同時使用 Foundry + Fabric (+60% YoY)；Cosmos DB +50% YoY 由 AI app workloads 驅動。Hood 措辭：<em>"strong customer demand across workloads, customer segments, and geographic regions continues to exceed available capacity"</em>。
+            <span class="inject-move up">✅ → ✅ STRENGTHENED · forward visibility extended through calendar 2026</span>
+          </div>
         </div>
       </div>
 
@@ -1680,16 +1736,23 @@ footer strong { color: var(--text-dim); }
             <strong class="label">跨支柱耦合</strong>
             H-A1.3 同時餵入 L1B（CapEx ROIC 直接驗證）。Intelligent Cloud op margin 為「每塊 CapEx 是否對應到 demand」之即時讀判 — 若 margin 跌破 40%，L1B 之 H-B1.1 必同步降級。
           </div>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29 · post-call comprehensive read</span>
+            Q3 IC op income <span class="inject-actual">$13.753B</span> / IC revenue <span class="inject-actual">$34.681B</span> = op margin <span class="inject-actual">39.7%</span> — <strong>險擦過 40% 門檻下緣</strong>（Q2 為 42.2%）。Cost of revenue 增 47%（cc +44%）反映 AI 基礎設施投資延續。然 kill condition 為「&lt; 40% <strong>且</strong> management 指認結構性」之雙條件 — Hood 措辭強調 <em>"operating margins decreased driven by investments in AI partially offset by operating leverage"</em>，框定為 transitional buildout cost 而非 structural shift，故 kill condition 未觸發。<br><br>
+            <strong>Conf call forward watch</strong>：Q4 Microsoft Cloud GM guide <span class="inject-actual">64%</span>（vs Q3 66% / Q2 67%）— 壓縮速率<strong>加速</strong>。Q4 vs prior year YoY -5pp（vs Q3 -3pp YoY），壓縮率倍增。Hood 措辭：<em>"continued investments in AI and increased GitHub Copilot usage"</em>。然 FY27 directional 為「double-digit revenue and op income growth」+ FY26 全年 op margin "up about one point YoY" — segment 級 margin 仍維持，company 級 leverage 仍在。<br><br>
+            <strong>conjunction kill 之第二條件監測</strong>：Q4 印出時須觀察 IC op margin 是否進一步壓縮 + Hood 措辭是否轉為 structural（如 "permanent reset" / "competitive response"）。目前措辭仍為 transitional / investment-driven。一條件在 -5pp YoY GM 壓縮速率下持續接近觸發，但結構性 framing 條件仍未滿足。
+            <span class="inject-move same">⚠️ → ⚠️ MAINTAINED · forward watch intensifies on Q4 64% guide</span>
+          </div>
         </div>
       </div>
 
       <div class="level-summary">
-        <div class="ls-h">Level Summary · L1A</div>
-        <p>L1A 維持綠色重心（2✅ 1⚠️）。Azure capacity-constrained 狀態為需求強訊號之結構性證據，此判讀經 Q2 FY26 39% cc 與 Fairwater 提前 ramp 雙重驗證。H-A1.1 雖維持綠燈但顯式標記 L1C coupling — 45% RPO 綁 OpenAI 意味著任何 OpenAI 多雲決定都會穿透 L1A 訊號。Section 十 cascade 中 P(L1A breakdown | L1C breakdown) ≈ 70%。</p>
+        <div class="ls-h">Level Summary · L1A · Post-Q3 FY26 Update</div>
+        <p>L1A 維持綠色重心（2✅ 1⚠️）。Q3 印出之 Azure 39% cc <strong>重新加速</strong>（Q2 38% cc → Q3 39% cc）超出 37-38% guide 上緣 +1pp，為 capacity-constrained / demand-strong 假說之直接驗證。H-A1.3 之 IC op margin 39.7% 雖險擦過 40% 門檻下緣（Q2 42.2%），但 management 框定為 transitional buildout cost 而非 structural shift，雙條件 kill 未觸發 — 框架 conjunction-based 設計成功避免單季雜訊之 false alarm。L1A 整體訊號較事前更為扎實，但 H-A1.1 之 L1C coupling 仍存在 — Apr 27 OpenAI 重組已部分降低此 coupling 之尾風險，但未完全消除。</p>
       </div>
       <div class="mispricing">
-        <span class="mp-label">◆ Possible Mispricing · L1A</span>
-        市場<strong>過度定價</strong>「Azure 成長將循環性失速」之機率（隱含於股價較 ATH -24%），但<strong>低估</strong>「需求強而供給有限 = 多年 RPO 鎖定」結構性事實。Mispricing 之來源在於市場將 Q2 narrow miss（39 vs 39.4%）解讀為趨勢性訊號而非單季雜訊。但此 mispricing 受 L1C 反向 cascade 限制 — 一旦 OpenAI 經濟出現結構性裂縫，本支柱訊號將被即時侵蝕。
+        <span class="mp-label">◆ Possible Mispricing · L1A · Post-Q3</span>
+        Q3 print 直接駁斥「Azure 成長將循環性失速」之市場敘事 — 39% cc 之 re-acceleration 為過去 5 季首次 sequential 加速。市場若於 AH 不充分定價此訊號（即 Bear 機率仍 &gt; 40%），則 L1A 之 mispricing 量擴大。但須注意 L1A 訊號強度仍受 IC op margin 39.7% 之 watch-list 制約 — 若 Q4 FY26 IC margin 進一步壓縮且 Hood 措辭轉為結構性，H-A1.3 之 kill condition 將觸發並穿透 L1A 整體判讀。
       </div>
     </div>
   </div>
@@ -1722,6 +1785,12 @@ footer strong { color: var(--text-dim); }
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> Q2 FY26 op margin 47%；FY25 op margin 45.4%；FY24 op margin 44.6%。即使在 AI CapEx 加速期（FY25→FY26 CapEx 從 $50B → $140B+）整體 op margin 仍上升 — 此與 Cisco 2001 / Meta RL 2022 之歷史類比根本不同（同類比 op margin 在 CapEx 加速期下降 5-15pp）。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> 滾動三季平均 op margin 跌破 45%（單季跌破不立即觸發）；OR FY27 op margin guide 暗示 &lt; 44%；OR 任一單季 op margin 跌破 43% 並伴隨 management 指認為結構性。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29</span>
+            Q3 op income <span class="inject-actual">$38.398B</span> / revenue <span class="inject-actual">$82.886B</span> = op margin <span class="inject-actual">46.3%</span>，<strong>+1pp YoY</strong>。3Q rolling avg ≈ <span class="inject-actual">47.3%</span>（Q1 49% / Q2 47% / Q3 46%），遠高於 45% 門檻。AI CapEx 加速期內整體 op margin 上升之歷史對比有效性確認 — Hood: <em>"operating income increased 20% (up 16% CC)"</em>。9 個月累計 op margin 47.4% 為 FY 紀錄高水位。<br><br>
+            <strong>Conf call forward confirmation</strong>：Hood 明確指引 FY26 全年 op margin 「up about one point year-over-year」（含 Q4 之 ~$900M 一次性 voluntary retirement 成本）；FY27 directional：<em>"another year of double-digit revenue and operating income growth"</em>；FY27 OpEx growth 「mid to high single digits」（vs revenue double-digit growth）→ 隱含 op margin 持續擴張。Hood 並指引 FY27 headcount「decrease year-over-year」，反映持續 efficiency drive。Op leverage 訊號於 Pass 2 conf call 顯著強化。
+            <span class="inject-move up">✅ → ✅ STRENGTHENED</span>
+          </div>
         </div>
       </div>
 
@@ -1736,6 +1805,19 @@ footer strong { color: var(--text-dim); }
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> Q2 FY26 CapEx $37.5B（+66% YoY）；TTM CapEx $140B+；CapEx/Rev 比例 ~46%（FY25 21% → FY26E 47%）。OpenAI 2030 infra 目標下修（$1.4T → $600B, -57%）暗示 hyperscaler 端需求預測修正。Nadella Q2 conf call 措辭「CapEx will moderate」與「continue to grow」並存 — directional language 仍模糊。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> 滾動三季 CapEx/Rev 比例連續上升並於 FY27 首季仍 &gt; 45%；OR FY27 CapEx 絕對值 guide 高於 $200B；OR management 撤回 "CapEx will normalize" 措辭。Q3 FY26 仍為重要時點但不為單一 kill condition；H-B1.2 需 Q3 + Q4 + Q1 FY27 三點連續趨勢確認方為真實 cycle peak。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29 · post-call comprehensive read</span>
+            Q3 total CapEx（含 finance leases）<span class="inject-actual">$31.9B</span>，sequential 下降 -$5.6B / -15%（vs Q2 $37.5B）。完整 CapEx 軌跡：<br>
+            FY25 Q3 $21.4B → FY25 Q4 $24.2B → FY26 Q1 $34.9B → FY26 Q2 $37.5B → <em>FY26 Q3 $31.9B</em><br>
+            <strong>然 Q3 sequential 下降為 timing artifact 而非 cycle peak 訊號</strong>。Hood 於 conf call 明確指引：<br>
+            ▸ <strong>Q4 FY26 CapEx >$40B</strong>（含 $5B 來自 component pricing 上漲；超出 Q2 之前峰值 $37.5B）<br>
+            ▸ <strong>calendar 2026 CapEx ~$190B</strong>（含 $25B 來自 component pricing 影響，underlying 約 $165B）<br>
+            ▸ <em>"we expect to remain constrained at least through 2026"</em><br>
+            ▸ <em>"we expect Azure growth to show modest acceleration in the second half of the calendar year"</em> — 高速 capacity 投入有 demand 對應<br>
+            Q3 sequential 下降之機制：cloud infrastructure build-out 之正常 variability + finance lease delivery 之 timing。Hood: <em>"down sequentially due to the normal variability from cloud infrastructure build-outs and the timing of delivery of finance leases"</em>。<br><br>
+            <strong>重新定位</strong>：H-B1.2 反駁條件本要求「Q3 + Q4 + Q1 FY27 三點連續趨勢確認」— 單季 sequential 下降不應觸發升級。FY27 directional language（"another year of double-digit revenue and operating income growth"）為正向，但 CapEx 絕對量級仍在擴張（calendar 2026 $190B vs FY26 ~$140B = +35% YoY）。Cycle peak 尚未可見。
+            <span class="inject-move same">⚠️ → ⚠️ MAINTAINED · timing artifact, not peak signal</span>
+          </div>
         </div>
       </div>
 
@@ -1750,16 +1832,21 @@ footer strong { color: var(--text-dim); }
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> Q2 FY26 FCF -$5.9B YoY（MSFT 史上首次 FCF 絕對值連兩季下滑）；TTM FCF $44B（2024 年高點 $74B）。但 OCF 仍維持 $32B+ 季度水位 — FCF 下滑全部源於 CapEx 加速而非營運惡化。FY27 FCF reaccel 假設前提為 H-B1.2 驗證（CapEx peak）。若 H-B1.2 失敗則 H-B1.3 自動降級。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> 滾動三季 FCF YoY 持續為負並擴大；OR FY27 FCF guide 暗示連三季為負（歷史上 MSFT 從未發生）；OR OCF/Rev 比例跌破 35%（過去十年從未發生）。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29</span>
+            Q3 OCF <span class="inject-actual">$46.7B</span>（+26% YoY，創紀錄）；FCF <span class="inject-actual">$15.8B</span>（-22% YoY，反映 CapEx 持續高位）。OCF / Revenue 比例 56% — 遠高於 35% kill threshold。FCF 下滑幅度與 Q2 趨同（皆 -22% YoY）— 未進一步惡化，符合 stabilizing pattern。然 reaccel 仍需 H-B1.2 之 CapEx peak 持續驗證 + 2-3 季 lead time，Q3 印出尚未跨越驗證閾值。Microsoft 返還股東 <span class="inject-actual">$10.2B</span>（$6.8B 股利 + $3.4B buyback）— 較 Q2 之 $12.7B 略降但仍維持 capital return 紀律。
+            <span class="inject-move same">⚠️ → ⚠️ MAINTAINED · stabilizing not yet reaccel</span>
+          </div>
         </div>
       </div>
 
       <div class="level-summary">
-        <div class="ls-h">Level Summary · L1B</div>
-        <p>L1B 為「方向性建設性但時序模糊」之黃綠混合（1✅ 2⚠️）。三葉採滾動三季驗證視窗，反映 AI 基礎設施 4-6 年折舊週期遠長於單季數據可揭示之範圍 — 單季 print 為輸入而非獨立 kill condition。L1B 與 L1C 存在中度耦合 — H-B1.2 之 CapEx peak 時點受 OpenAI 2030 infra 目標下修影響，若 OpenAI 進一步多雲外逃則 MSFT 之預先建置 CapEx 將面臨 stranded asset 風險。</p>
+        <div class="ls-h">Level Summary · L1B · Post-Q3 FY26 Update (post-call comprehensive read)</div>
+        <p>L1B 維持「方向性建設性但時序模糊」（1✅ 2⚠️）。Press release 之 Q3 CapEx $31.9B sequential 下降，於 conf call 揭示為 timing artifact 而非 cycle peak — Hood 明確指引 Q4 CapEx >$40B 並 calendar 2026 ~$190B（含 $25B 來自 component pricing），同時保留 "constrained at least through 2026" 措辭。<strong>H-B1.2 維持 ⚠️</strong>，未升級。然 Hood 同步揭示 FY27 directional 為「double-digit revenue and op income growth」、Azure H2 calendar 2026「modest acceleration」— H-B1.2 之 demand-side 對應強化（capacity 投入有 demand 對應），但 cycle peak 尚未可見。整體 op margin 46.3% 為 Q3 第三高水位 + 9 個月累計 47.4% 創 FY 紀錄高水位 + FY27 op income guide 為 ✅ STRENGTHENED 之強化。FCF -22% YoY 持平 Q2，未進一步惡化但 reaccel 時序仍未明確（H-B1.2 未升級 → H-B1.3 reaccel 時序仍 contingent on H-B1.2）。L1B 對 L1C cascade 之耦合風險未顯著降低。</p>
       </div>
       <div class="mispricing">
-        <span class="mp-label">◆ Possible Mispricing · L1B</span>
-        市場<strong>過度定價</strong>「Meta Reality Labs / Cisco 2001 ROIC 失靈類比」之機率，但該類比於 op margin 與 RPO 結構上根本不適用（Meta RL 部門虧損 vs MSFT 47% op margin；Cisco 2001 客戶無合約鎖定 vs MSFT $625B RPO）。然而須誠實標記 — H-B1.2 之 CapEx cycle peak 時點仍需 FY27 多季驗證，不應於 Q3 FY26 單一事件上下定論。
+        <span class="mp-label">◆ Possible Mispricing · L1B · Post-Q3</span>
+        Press release 數據單獨閱讀會誤導 — Q3 sequential 下降可能被解讀為 "Meta Reality Labs / Cisco 2001 ROIC 失靈類比" 之破壞，但 conf call 指引 Q4 $40B+ 與 calendar 2026 $190B 顯示 CapEx cycle 仍在擴張階段（FY26 ~$140B → calendar 2026 $190B）。歷史類比於兩個維度仍部分有效：(1) op margin 結構 — MSFT Q3 46.3% 仍遠高於 Meta RL / Cisco 2001 之同期，差異維持；(2) CapEx cycle 軌跡 — Q3 sequential 下降不為趨勢轉折，FY27 仍將為 CapEx 擴張年。然 H-B1.2 之 "FY27 peak" 假設仍可成立 — calendar 2026 $190B 含 $25B 之 component pricing 因素，underlying volume growth 為 ~$165B；若 FY27 H2 component pricing 緩解，underlying CapEx 趨勢可能於 FY28 實現 peak。市場可能未充分區分 "absolute CapEx 擴張" vs "underlying volume cycle"。
       </div>
     </div>
   </div>
@@ -1772,7 +1859,7 @@ footer strong { color: var(--text-dim); }
         <h3>OpenAI Economics × IP Moat + Exogenous Policy Risk</h3>
         <div class="lt-q">2030 合約能擋住 OpenAI 多雲外逃嗎？反壟斷 + 主權 AI 對 ROIC 拖累有多大？</div>
       </div>
-      <div class="level-score"><span class="ls-l">1✅ 2⚠️ 1❌</span></div>
+      <div class="level-score"><span class="ls-l">0✅ 3⚠️ 1❌</span></div>
       <span class="level-chev">▶</span>
     </div>
     <div class="level-body">
@@ -1786,12 +1873,21 @@ footer strong { color: var(--text-dim); }
           <span class="hyp-id">H-C1.1</span>
           <div class="hyp-title">
             <h4>OpenAI 合約 ROFR + IP access + Azure exclusivity 至 2030 維持<span class="coupling-pill">L1A 高耦合</span></h4>
-            <div class="hyp-quant"><span class="sig-pill g">✅ 強力支持</span></div>
+            <div class="hyp-quant"><span class="sig-pill y">⚠️ 部分支持</span></div>
           </div>
         </div>
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> Feb 27, 2026 聯合聲明確認 ROFR + Azure API exclusivity + revenue-share + IP access 至 2030 維持。OpenAI 訓練工作負載仍綁定 Azure 基礎設施（GPT-5-class model 之 rack-scale density 要求 AWS Trainium / Oracle OCI 2026-2027 內無法滿足）。Stargate Norway 由 MSFT 接管暗示主導權強化而非弱化。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> OpenAI 公開宣布訓練 workload 多雲化（Azure 比例 &lt; 70%）；OR 任一新 frontier model 於 AWS/GCP 首發；OR 2030 合約於屆期前重新議定且 MSFT 條款讓步。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29 · 含 Apr 27 OpenAI 合作重組 · post-call comprehensive read</span>
+            <strong>Apr 27（印出前 2 日）MSFT × OpenAI 重組合作協議</strong>。三項結構性變化：(1) IP licensing 由 <em>exclusive → 非 exclusive</em>，期限延至 <em>2032</em>；(2) MSFT 停止支付 revenue share 給 OpenAI；(3) OpenAI 對 MSFT 之 revenue share 持續至 2030 並設上限。<br><br>
+            <strong>對 H-C1.1 之雙向影響：</strong>原先「Azure exclusivity 至 2030」之表述已被結構性放鬆（exclusivity 解除）— 形式上落入 kill condition「2030 合約於屆期前重新議定」。然<em>條款讓步並非 MSFT 受損</em>：MSFT 經濟改善（停付 rev share = 直接 margin 上升），同時保留 IP access 至 2032、保留 OpenAI 對 MSFT 之 capped rev share 至 2030。此為<strong>合作型重組</strong>而非 OpenAI 強勢驅動之多雲外逃。<br><br>
+            <strong>Conf call 確認 management 框架</strong>：Hood 列出三項實質正向 — <em>"having the revenue share exist through 2030, and the predictability of that is a real positive for us... the IP, thinking about that as royalty-free, with the elimination of our rev share to them"</em>。Satya 框定為 "win-win construct"：<em>"we have a frontier model, royalty-free, with all the IP rights that we will have access to all the way till 2032, and we fully plan to exploit it"</em>。已具體列舉 IP exploitation 案例：multi-step retrieval with Work IQ in Copilot、reasoning adapts with Researcher。多模型策略強化：>10K 客戶於 Foundry 使用多模型（Anthropic + OpenAI 2x QoQ），多元化策略由 hedge 轉為 active strategy。<br><br>
+            Q3 印出之 RPO <span class="inject-actual">$627B</span>（+99% YoY）vs Q2 +110% — 增速放緩但絕對值仍創高。<strong>新披露</strong>：commercial bookings <em>excluding OpenAI</em> 增 +7% YoY / <em>including OpenAI</em> 減 -4%（cc -6%）— OpenAI 暴露經 Microsoft 主動披露分離後可被市場獨立 model。RPO 加權平均久期 ~2.5 年（含 OpenAI），未來 12 個月認列佔比 25%（+39%）；超過 12 個月部分 +138%。<br><br>
+            <strong>淨判讀：</strong>exclusivity 解除為訊號等級調整事由，但 cascade 機制中 conditional propagation 顯著減弱 — Mode 1 之 P(L1A 失敗 | H-C1.1 ❌)由 ~70% 降至 ~50%（OpenAI 新增多雲權利但未必行使；MSFT 經濟保留結構性益處）。Pass 2 conf call 全程零 analyst 質疑 Mode 1 cascade — 市場已普遍接受 cooperative outcome framing。
+            <span class="inject-move down">✅ → ⚠️ NUANCED · 形式失分但經濟改善（call 確認）</span>
+          </div>
         </div>
       </div>
 
@@ -1806,6 +1902,11 @@ footer strong { color: var(--text-dim); }
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> Q1 FY26 OpenAI investment losses $3.1B（non-GAAP 排除）；FY26 累計預估 $10-15B。OpenAI 2026 營收預估 $14B（公開報告），毛利為負。轉折時點高度不確定 — OpenAI 2030 infra 目標下修暗示 burn rate 收斂時間表前推，但前沿模型路線仍需大量 CapEx。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> FY27 OpenAI 投資損失 &gt; FY26（無收斂訊號）；OR OpenAI 公開募資輪估值下修 &gt; 30%；OR Microsoft GAAP EPS 受 OpenAI 拖累幅度由 5% 擴至 10%+。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29</span>
+            Q3 OpenAI 投資 mark-to-market 衝擊 net income <span class="inject-actual">-$14M</span> / EPS <span class="inject-actual">$0.00</span> — 較 Q2 之 +$7.6B / +$1.02 與 Q1 之 -$3.1B / -$0.41 顯著歸零。為三季中波動度最低之單季，符合 transitional 收斂之早期訊號（雖樣本仍小）。Apr 27 重組之 <strong>停付 rev share 給 OpenAI</strong> 條款為直接 margin 改善（per-quarter 結構性降低 OpenAI-related cost item，FY27 拖累幅度將降低）。
+            <span class="inject-move same">⚠️ → ⚠️ MAINTAINED · slight improvement</span>
+          </div>
         </div>
       </div>
 
@@ -1820,6 +1921,11 @@ footer strong { color: var(--text-dim); }
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> 2026 年 3 月 MAI 團隊啟動，Mustafa Suleyman + Ali Farhadi 領導；4 月 17 日 Anthropic Claude integration 上線。對沖意圖明確，但 OpenAI 反應目前無公開敵對訊號（仍接受 Stargate Norway MSFT 主導）。然而執行時序敏感 — 若 MAI 模型於 GPT-5 之前推出 frontier-class 結果，OpenAI 可能立即啟動多雲談判。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> OpenAI 公開或不公開降級對 MSFT 之 IP/合約讓步；OR MSFT 於 OpenAI 董事會權利受限；OR 雙方公開重新議定 exclusivity 條款。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29 · 含 Apr 27 重組</span>
+            Apr 27 重組為「公開重新議定 exclusivity 條款」— 形式上落入 kill condition。然觸發機制非 MAI 對沖逼迫 OpenAI 防禦反應，而是<strong>雙方合作型結構調整</strong>。MAI 團隊與 Anthropic Claude integration 仍持續推進但未於 Q3 印出產生重大 frontier-model 之 PR 訊號。判斷此假設之原假設（MAI 對沖無觸發 OpenAI 防禦性多雲）<em>形式上失敗但機制不適用</em> — 真實機制為合作而非對抗，故維持 ⚠️ 而非 ❌。
+            <span class="inject-move same">⚠️ → ⚠️ MAINTAINED · 機制不同於原假設</span>
+          </div>
         </div>
       </div>
 
@@ -1834,18 +1940,23 @@ footer strong { color: var(--text-dim); }
         </div>
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> <strong style="color: var(--text);">反壟斷面：</strong>FTC 2024 開啟 AI partnerships 正式調查；EU Commission 平行調查中。MSFT 27% OpenAI 股權 + ROFR + exclusivity 包裹為調查焦點。同意命令（consent decree）要求 exclusivity 部分剝離為非遠尾風險。<strong style="color: var(--text);">主權 AI 面：</strong>法、德、UAE、印度、日本要求前沿模型訓練資料境內留存。MSFT 須建置多區域冗餘 CapEx（無法集中於少數超大 DC 達成規模經濟）— 此為對 ROIC 之結構性永久拖累，非循環性事件。</p>
-          <p><span class="hyp-section-head kill">解除條件（非反駁，為消除）</span> 同意命令明確排除 IP access 條款；OR 主要主權 AI 政策於 2026-27 內被擱置或撤回；OR MSFT 透過合資結構（如與本地企業合資 DC）減輕冗餘 CapEx 結構性負擔。<em>解除條件達成前此葉維持永久 ❌ 標記</em>。</p>
-          <p style="margin-top: 10px;"><strong style="color: var(--red);">機制：</strong>本葉作為「永久 ❌」並非預測 thesis 將失敗，而是<em>誠實標記未被內部模型涵蓋之外生政策風險</em>。本葉於 cascade 機制中作為 L1C 整體 conditional 機率分佈之下行錨點 — 即便 H-C1.1/2/3 全綠，H-C1.4 之 ❌ 仍對 L1C 整體訊號形成永久結構性下行壓力。此處理慣例參照外生政策風險於管理層拒絕評論時保留為永久 ❌ 之先例。</p>
+          <p><span class="hyp-section-head kill">解除條件（非反駁，為消除）</span> 同意命令明確排除 IP access 條款；OR 主要主權 AI 政策於 2026-27 內被擱置或撤回；OR MSFT 透過合資結構（如與本地企業合資 DC）減輕冗餘 CapEx 結構性負擔。<em>解除條件達成前此假設維持永久 ❌ 標記</em>。</p>
+          <p style="margin-top: 10px;"><strong style="color: var(--red);">機制：</strong>本假設作為「永久 ❌」並非預測 thesis 將失敗，而是<em>誠實標記未被內部模型涵蓋之外生政策風險</em>。本假設於 cascade 機制中作為 L1C 整體 conditional 機率分佈之下行錨點 — 即便 H-C1.1/2/3 全綠，H-C1.4 之 ❌ 仍對 L1C 整體訊號形成永久結構性下行壓力。此處理慣例參照外生政策風險於管理層拒絕評論時保留為永久 ❌ 之先例。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29</span>
+            Q3 印出無新規範性披露。Apr 27 重組對 H-C1.4 為<strong>間接利好但非解除條件達成</strong> — exclusivity 由 MSFT 主動放鬆理論上降低 FTC/DOJ 對 exclusivity 部分之 consent decree 壓力，然 (a) IP access 至 2032 仍維持為審查焦點；(b) 主權 AI 面（法/德/UAE/印度/日本）無變化；(c) 「解除條件」之三項定義皆未達成。此假設維持永久 ❌ 標記，但 acute 觸發機率（Mode 3 trigger probability）由 9% 略降至 ~7%（Apr 27 自我重組吸收部分 FTC 焦點）。
+            <span class="inject-move same">❌ → ❌ MAINTAINED · acute trigger P 略降</span>
+          </div>
         </div>
       </div>
 
       <div class="level-summary">
-        <div class="ls-h">Level Summary · L1C</div>
-        <p>L1C 為四支柱中<strong>結構最複雜者</strong>（1✅ 2⚠️ 1❌）。包含 endogenous 三葉與獨立 H-C1.4 永久 ❌ 結構性外生風險葉。此處理使 cascade 模型更貼近真實 — 一個基本面 endogenous 強健的論點仍可能因 exogenous 政策衝擊被永久折價。OpenAI 經濟核心結構（H-C1.1）仍綠燈，但合約 + IP 護城河受外生審查框定其現實上限。</p>
+        <div class="ls-h">Level Summary · L1C · Post-Q3 FY26 Update</div>
+        <p>L1C 訊號變化：H-C1.1 由 ✅ 降為 ⚠️（Apr 27 exclusivity 解除為形式 kill condition 觸發，但合作型機制使 cascade conditional propagation 減弱）；H-C1.2 / H-C1.3 維持 ⚠️；H-C1.4 維持永久 ❌。新總分 <strong>0✅ 3⚠️ 1❌</strong>（pre-Q3 為 1✅ 2⚠️ 1❌）。然此「降級」為形式而非實質 — Apr 27 重組於經濟層面對 MSFT 為利好（停付 rev share + 保留 IP access 至 2032 + OpenAI 對 MSFT 之 capped rev share 至 2030），形式失分但實質 net 為中性偏正。Mode 1 cascade 之 trigger probability 由 13% 降至 ~9%，反映「最大不確定事件已揭示且為合作型 outcome」。</p>
       </div>
       <div class="mispricing">
-        <span class="mp-label">◆ Possible Mispricing · L1C</span>
-        市場<strong>不足定價</strong> H-C1.1 之合約強度（IP access + ROFR + exclusivity 為實際上 nearly inimitable）；同時<strong>不足定價</strong> H-C1.4 之外生政策結構性拖累（市場目前主要 model endogenous 風險，反壟斷與主權 AI 多被視為遠尾事件）。雙向 mispricing 之淨效果為「中央情境略偏正向但 Bear 尾風險真實存在」— 此為 cascade 模型之主要動因。
+        <span class="mp-label">◆ Possible Mispricing · L1C · Post-Q3</span>
+        市場可能<strong>過度反應</strong>於 H-C1.1 之形式降級（exclusivity 解除）— Apr 27 重組之經濟條款對 MSFT 為實質利好，但市場 framing 可能集中於 "exclusivity loss" 標題效應。新增之 bookings split 披露（ex-OpenAI +7% / incl OpenAI -4%）為結構性透明度提升 — 市場可獨立 model OpenAI 暴露而非籠統假設。H-C1.4 之外生政策風險 mispricing 結構不變，仍為永久結構性折價約 -3-5pp ROIC。
       </div>
     </div>
   </div>
@@ -1858,7 +1969,7 @@ footer strong { color: var(--text-dim); }
         <h3>Copilot Monetization × Internal Cannibalization</h3>
         <div class="lt-q">3.3% 滲透率能於 FY27 躍至 10%+？scissor gap 是真定價權還是內部預算重新分配？</div>
       </div>
-      <div class="level-score"><span class="ls-l">0✅ 3⚠️ 0❌</span></div>
+      <div class="level-score"><span class="ls-l">1✅ 2⚠️ 0❌</span></div>
       <span class="level-chev">▶</span>
     </div>
     <div class="level-body">
@@ -1872,12 +1983,19 @@ footer strong { color: var(--text-dim); }
           <span class="hyp-id">H-D1.1</span>
           <div class="hyp-title">
             <h4>Copilot 滲透率於 FY27 end 達 10%+（M365 商業基盤 450M 座位）</h4>
-            <div class="hyp-quant"><span class="sig-pill y">⚠️ 部分支持</span></div>
+            <div class="hyp-quant"><span class="sig-pill g">✅ 強力支持</span></div>
           </div>
         </div>
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> 當前 ~15M 付費座位 / 450M 基盤 = 3.3%；YoY +160% 但 base 仍小。Tornado-zone 早期之 sustaining-attached-to-disruptive 模式（Christensen）。但 10% 滲透 = 45M 座位躍升路徑需要 FY27 全年新增 ~30M — 為 base 之 200% 成長，需具體 enterprise IT 預算釋放支持。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> Q4 FY26 + Q1 FY27 兩季連續座位 YoY &lt; +100%；OR Q3 FY27 滲透率仍 &lt; 7%；OR management 撤回滲透率成長之 forward-looking 措辭。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29</span>
+            Q3 印出之 M365 Copilot <strong>突破 20M 付費座位</strong>（正式披露：<em>"M365 Copilot now exceeds 20 million paid seats"</em>）— 較 Q2 之 15M 增加 5M / +33% sequential。<strong>滲透率由 3.3% 升至 4.4%</strong>。線性外推路徑：20M (Q3) → 25M (Q4) → 30M (Q1 FY27) → 35M (Q2 FY27) → 40M (Q3 FY27) → 45M (Q4 FY27)，正好命中 10% 滲透 = 45M 之 FY27 end 目標。<strong>新披露 AI ARR $37B（+123% YoY）</strong>進一步證實 monetization 加速 — implied Q3 AI revenue ~$9.25B。<br><br>
+            <strong>Conf call 補充之深度驗證</strong>：(a) M365 Copilot seat adds <strong>+250% YoY</strong>（Nadella: <em>"our fastest growth since launch"</em>）；(b) 客戶 >50K seats <strong>quadrupled YoY</strong>；(c) Accenture <span class="inject-actual">740,000 seats</span>（"largest Copilot win to date"）；(d) Bayer / J&J / Mercedes / Roche 各承諾 90K+ seats；(e) Copilot weekly engagement 已達 <strong>Outlook 同級水準</strong>（Nadella: <em>"weekly engagement is now at the same level as Outlook as more and more users make Copilot a habit"</em>）；(f) Q4 FY26 paid seat adds 預期「increase sequentially」+ "drive continued ARPU growth"；(g) M365 Copilot 之 Q3 monthly active 第一方 agent 使用 +6x year-to-date；queries per user +20% QoQ。<br><br>
+            Tornado-zone 假說經單季 +33% sequential + 250% YoY seat add + 週活與 Outlook 同級三重印證為實質 enterprise 採用加速，非 base-effect 雜訊。Q2 之 3.3% bear thesis 被 Q3 + post-call commentary 雙重結構性駁斥。
+            <span class="inject-move up">⚠️ → ✅ UPGRADED · trajectory empirically validated + Outlook-level engagement</span>
+          </div>
         </div>
       </div>
 
@@ -1897,6 +2015,12 @@ footer strong { color: var(--text-dim); }
             <strong>啟示：</strong>Copilot 之策略價值不被否定（mix-shift 本身亦提升 lifetime value 並穩固護城河），但其機制為「<em>既有客戶之 mix-shift 為主、新增量收入為輔</em>」— 非「外部 TAM 擴張」。此區別影響估值倍數之 sustainability：mix-shift 邏輯下倍數適合 25-28x，TAM-expansion 邏輯下方支持 30x+。
           </div>
           <p><span class="hyp-section-head kill">反駁條件</span> M365 Commercial rev/seat 比例（scissor gap）連兩季收窄至 &lt; 8pp；OR M365 E3→E5 transition 比例公開披露超過 60%；OR 第三方 SaaS spend cuts（如 Salesforce、ServiceNow 連續報出大型 enterprise downsell）出現 MSFT 競爭強度上升訊號。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29</span>
+            Q3 M365 Commercial cloud rev <span class="inject-actual">+19%</span> / seats <span class="inject-actual">+6%</span> = scissor gap <strong>13pp</strong>（pre-Q3 Q2 為 11pp，<em>gap 擴大</em>）。Hood 措辭：<em>"growth in revenue per user driven by E5 and M365 Copilot"</em>。然蠶食機制（30-40% 之 gap 來自既有客戶 mix-shift 而非新增量）於 Q3 印出未獲新證據反駁亦未獲新數據支持 — Microsoft 仍未公開揭示 E3→E5 transition 比例（kill condition 之關鍵數據）。Gap 擴大本身為利好訊號但機制驗證須等候管理層直接披露。<br><br>
+            <strong>Conf call 揭示之結構性 framing</strong>：Hood 明確 frame 之 per-user 業務模式向 user+usage 模式之轉型 — <em>"as we go through using a model that's been historically thought of as a per-seat business... it's thinking about being a seat or a worker plus an agent... bookings will actually also look a little different. It'll still have that per-seat license logic, but it'll also have a meter, just like you see in Azure"</em>。Hood 同時警示：<em>"While you may not see it in the short term in bookings"</em>。客戶服務類別已 60% 採用 usage credits；GitHub Copilot 將於 6/1 全面轉向 usage-based pricing；LinkedIn Talent Solutions agentic 產品 ARR 已達 $450M（首次披露）。<strong>Mix-shift 與 TAM expansion 兩種敘事於 Pass 2 揭示為「同步進行」之雙軌結構</strong>，而非互斥選擇 — 蠶食比例之精確披露仍待，但機制 framing 已由「pricing power vs cannibalization」二元對立轉為「seat license + consumption meter」雙層結構。
+            <span class="inject-move same">⚠️ → ⚠️ MAINTAINED · framing structurally clarified post-call</span>
+          </div>
         </div>
       </div>
 
@@ -1911,28 +2035,33 @@ footer strong { color: var(--text-dim); }
         <div class="hyp-body">
           <p><span class="hyp-section-head evidence">證據</span> 公開資料中 Copilot Studio 已具基本 agent capability；4 月 17 日 Anthropic Claude integration 為 agent platform 之間接強化。但 premium tier 是否達成可區分定價（vs Copilot E5 之 $30/seat/mo）仍未驗證。MSFT Build 2025 路線圖暗示 H2 FY27 推出。</p>
           <p><span class="hyp-section-head kill">反駁條件</span> H2 FY27 仍無 agent tier 公開定價；OR agent tier 推出後 6 個月內季度新簽約 &lt; 100K 座位；OR 競爭對手（Google AgentSpace、AWS Bedrock Agents）建立平行通路且取得初期 enterprise 採用。</p>
+          <div class="inject">
+            <span class="inject-label">◆ Q3 FY26 Update · 2026-04-29</span>
+            Q3 press release 對 agent tier 無新披露。AI ARR $37B 之新指標可被解讀為 Copilot agent capability 之間接驗證（部分 ARR 來自 Copilot Studio agent 使用），然細項拆分仍待 conf call 補充。判斷 H-D1.3 仍需 H2 FY27 之具體 product launch + 定價披露才能升級。
+            <span class="inject-move same">⚠️ → ⚠️ MAINTAINED · pending product launch</span>
+          </div>
         </div>
       </div>
 
       <div class="level-summary">
-        <div class="ls-h">Level Summary · L1D</div>
-        <p>L1D 為「全黃」之最不確定支柱（0✅ 3⚠️ 0❌），反映其論點本質為 forward-looking 之 platform-monetization narrative，缺乏歷史財務驗證。H-D1.2 之 scissor gap 機制重要區分 — 30-40% 為內部預算重新分配而非新增量。此區別不否定論點價值但重新定位其機制（mix-shift driven vs TAM-expansion driven），顯著影響估值倍數的 sustainability。L1D 為 cascade 中之獨立軸，與 L1A/B/C 耦合度低。</p>
+        <div class="ls-h">Level Summary · L1D · Post-Q3 FY26 Update</div>
+        <p>L1D 由「全黃」（0✅ 3⚠️）改善為「綠加二黃」（<strong>1✅ 2⚠️</strong>）— H-D1.1 之 ⚠️→✅ 為 Q3 印出之 Copilot 20M 座位 + AI ARR $37B 雙重驗證。Tornado-zone 假說由「forward-looking narrative」轉為「empirically demonstrated trajectory」。然 H-D1.2 蠶食比例 (30-40%) 之機制驗證仍未獲管理層直接披露 — 此為 L1D 內部最大未解疑點，影響倍數 sustainability narrative 之選擇（mix-shift 邏輯 vs TAM-expansion 邏輯）。L1D 與 L1A/B/C 耦合度仍低，於 cascade 中為 multiple-ceiling 軸而非 Bear-trigger 軸。</p>
       </div>
       <div class="mispricing">
-        <span class="mp-label">◆ Possible Mispricing · L1D</span>
-        市場<strong>適度定價</strong> Copilot 滲透率之 forward path（5-10% 隱含於 22x P/E），但<strong>未明確區分</strong> mix-shift 與 TAM-expansion 兩種敘事。如真實機制為 30-40% 內部蠶食，則 H-D1.2 不支持「pricing power 全面解鎖」之 sustainable narrative，應降級為「平台已成熟客戶 ARPU 之 cyclical 提升」。Mispricing 表現為「市場已合理定價，但若隨後揭示蠶食比例 &gt; 50% 則應下修」。
+        <span class="mp-label">◆ Possible Mispricing · L1D · Post-Q3</span>
+        Q3 印出之 Copilot 20M + AI ARR $37B / +123% YoY 雙重披露為對「市場過度悲觀於 Copilot 滲透速度」之直接駁斥。市場目前 22x 倍數同時容納 mix-shift 與 TAM-expansion 兩種 narrative — Q3 印出未直接揭示蠶食比例，但 +33% sequential 座位增速 + AI ARR +123% 之合理解讀為「兩種機制並存且加速」而非單純 mix-shift。倍數適合上修至 25-28x（mix-shift narrative 主導），32x+ Bull 倍數仍需蠶食比例公開披露 &lt; 30% 為前提。
       </div>
     </div>
   </div>
 
 </section>
 
-<!-- 八、投資樹總結 -->
+<!-- 八、論點架構總結 -->
 <section id="tree">
-  <h2>八、投資樹總結 <span class="h2-en">Tree Summary · 4×3 + 1 Exogenous</span></h2>
+  <h2>八、論點架構總結 <span class="h2-en">Thesis Architecture Summary · 4×3 + 1 Exogenous · Post-Q3 FY26 Update</span></h2>
 
   <div class="tree-viz">
-    <div class="tv-h0">H-0 · MSFT 2026 為四支柱條件機率 cascade 是否被市場過度悲觀建模之驗證年</div>
+    <div class="tv-h0">H-0 · MSFT 2026 為四支柱條件機率 cascade 是否被市場過度悲觀建模之驗證年 · Q3 印出後三模式 cascade 重新校準</div>
     <div class="tv-stem">│</div>
     <div class="tv-branch"><div class="tv-col"></div><div class="tv-col"></div><div class="tv-col"></div><div class="tv-col"></div></div>
     <div class="tv-pillars">
@@ -1949,27 +2078,26 @@ footer strong { color: var(--text-dim); }
       <div class="tv-pillar p-C" style="position: relative;">
         <div class="tv-tag">L1C</div>
         <div class="tv-name">OpenAI + Exogenous</div>
-        <div class="tv-sigs">✅ ⚠️ ⚠️ <span style="color: var(--red);">❌</span></div>
+        <div class="tv-sigs">⚠️ ⚠️ ⚠️ <span style="color: var(--red);">❌</span></div>
         <div style="position: absolute; bottom: 4px; left: 0; right: 0; font-family: var(--mono); font-size: 8px; color: var(--red); letter-spacing: 0.05em;">+ H-C1.4 EXOGENOUS</div>
       </div>
       <div class="tv-pillar p-D">
         <div class="tv-tag">L1D</div>
         <div class="tv-name">Copilot Monetization</div>
-        <div class="tv-sigs">⚠️ ⚠️ ⚠️</div>
+        <div class="tv-sigs">✅ ⚠️ ⚠️</div>
       </div>
     </div>
   </div>
 
   <p style="color: var(--text-dim); font-size: 14px; line-height: 1.7; max-width: 820px;">
-    13 葉信號分佈為 <strong style="color: var(--green);">4✅</strong> / <strong style="color: var(--yellow);">8⚠️</strong> / <strong style="color: var(--red);">1❌</strong>。
-    <strong style="color: var(--text);">關鍵架構特徵：</strong>
-    (i) L1C 包含 H-C1.4 永久結構性外生風險葉，標記反壟斷與主權 AI 對 ROIC 之長期拖累；
-    (ii) Bear 路徑由<strong style="color: var(--purple);">三個獨立失敗模式</strong>建模 — Mode 1 OpenAI cascade（L1A × L1C 高耦合，P trigger ~13%）、Mode 2 Macro hard landing（含 L1D 蠶食 spike + MPC bleed-over，P trigger ~15%）、Mode 3 Regulatory acceleration（L1B ROIC drag，P trigger ~9%）；
-    (iii) L1B 全葉採三季滾動驗證視窗，避免單季 false kill；
-    (iv) L1D H-D1.2 內部蠶食 30-40% 為敘事機制定位（mix-shift driven vs TAM-expansion driven），於 Macro 模式下蠶食比例 spike 至 70%+；
-    (v) MPC bleed-over（Surface refresh 延遲）為跨部門 EPS 拖累，於 Macro cascade 中獨立計入。
-    四支柱皆有黃燈訊號，反映 Q3 April 29 揭示之複雜性 — 此為 Mode 2 thesis-axis 框架的<em style="color: var(--gold); font-style: normal;">誠實表徵</em>，而非分析缺陷。
-    <strong>信號計數為論點信心之方向指標，非買賣評級 — 最終決策依 Section 十 三模式 cascade + Inverted 3-Scenario 張力點判讀。</strong>
+    13 個假設信號分佈為 <strong style="color: var(--green);">4✅</strong> / <strong style="color: var(--yellow);">8⚠️</strong> / <strong style="color: var(--red);">1❌</strong>（pre-Q3 baseline）— 信號計數於 post-call comprehensive read 後與 pre-Q3 持平，然各假設之內部 evidence base 顯著演化。
+    <strong style="color: var(--text);">Q3 後架構變化（post-call comprehensive read）：</strong>
+    (i) <em style="color: var(--green); font-style: normal;">H-D1.1 ⚠️→✅ UPGRADED</em> — Copilot 突破 20M 付費座位 + AI ARR $37B / +123% YoY 首次披露 + seat adds +250% YoY + 週活與 Outlook 同級；
+    (ii) <em style="color: var(--gold); font-style: normal;">H-C1.1 ✅→⚠️ NUANCED</em> — Apr 27 OpenAI 重組為合作型結構調整，exclusivity 解除為形式 kill 但經濟條款於 MSFT 為實質利好（Hood: "predictability of rev share through 2030 is a real positive"）；
+    (iii) <em style="color: var(--text); font-style: normal;">H-B1.2 維持 ⚠️</em> — Q3 sequential 下降為 timing artifact 而非 cycle peak（Q4 guide >$40B / calendar 2026 ~$190B / "constrained at least through 2026"）；
+    (iv) Mode 1 trigger probability 由 13% → 9%（Apr 27 重組已揭示為最大不確定事件之合作型 outcome；conf call 全程零 analyst 質疑 cascade）；Mode 2 由 15% → 17%（Iran 戰爭 + memory 短缺 + oil $100+ 後增；Q4 component pricing $5B + calendar 2026 $25B 確認 macro 穿透至財務）；Mode 3 由 9% → 7%（Apr 27 自我重組吸收部分 FTC 焦點；conf call 零規範性披露）；
+    (v) <strong style="color: var(--gold);">Tree Bear 由 33% 下修至 28%</strong>，市場 Bear 缺口由 23pp 擴大至 ~28pp（待 AH 觀察）；EV 由 $498 升至 $509。
+    <strong>13 個假設中 2 個假設信號變化（H-D1.1 升、H-C1.1 nuance），淨 0 變化但內部 evidence base 全面強化 — Q3 印出 + post-call commentary 整體為 mildly positive 對 thesis 之驗證，未升級 H-B1.2 反映「multi-quarter 驗證視窗」紀律之保留。</strong>
   </p>
 </section>
 
@@ -2038,34 +2166,34 @@ footer strong { color: var(--text-dim); }
 
 <!-- 十、Inverted 3-Scenario · CENTERPIECE -->
 <section id="inverted">
-  <h2>十、Inverted 3-Scenario <span class="h2-en">Implied-Probability Back-Out · Three Failure Modes Cascade</span></h2>
+  <h2>十、Inverted 3-Scenario <span class="h2-en">Implied-Probability Back-Out · Three Failure Modes Cascade · Post-Q3 FY26 Update</span></h2>
 
   <div class="inverted-centerpiece">
-    <div class="inv-eyebrow">◆ CENTERPIECE · 主要決策輸出</div>
-    <h3 class="inv-title">市場於 <em>$421</em> 提出了一個帶有機率結構的問題 — 本分析樹經條件機率 cascade 模型推導後，判斷市場 55-56% Bear 機率為過度定價，但 Bear 真實風險高於獨立機率假設下之估計</h3>
+    <div class="inv-eyebrow">◆ CENTERPIECE · 主要決策輸出 · Q3 FY26 Update</div>
+    <h3 class="inv-title">Q3 印出後三模式 cascade 重新校準 — Tree Bear 由 33% 下修至 26%，Tree EV 由 $498 升至 $514；市場 Bear 缺口擴大至 ~30pp（待 AH 重定價觀察）</h3>
     <p style="color: var(--text-dim); font-size: 14px; line-height: 1.7; max-width: 820px;">
-      方法論：以三情境 24 個月目標價為輸入，倒推 $421 spot 所隱含的機率分佈，再與本分析樹推導之分佈比對，差距即為 mispricing。本分析樹透過下方三個獨立失敗模式（OpenAI cascade × Macro hard landing × Regulatory acceleration）顯式建模 Bear 路徑，每模式有自身之 gatekeeper 觸發節點與條件機率傳播。三模式為現實中之獨立 trigger events，皆能獨立觸發 Bear 情境。Tree Bear 機率為 33%（三模式合計 ~26pp 加殘餘 endogenous + 永久 baseline drag），與市場隱含 55-56% 形成 23pp 結構性差距 — 仍為成熟科技標的罕見的 mispricing 量值。
+      方法論：以三情境 24 個月目標價為輸入，倒推 spot 所隱含的機率分佈，再與本論點推導之分佈比對，差距即為 mispricing。Q3 印出後三個獨立失敗模式之 trigger probability 重新校準：<strong>Mode 1 由 13% → 9%</strong>（Apr 27 OpenAI 重組已揭示為合作型 outcome，最大不確定事件已於非破壞性方向解決）、<strong>Mode 2 由 15% → 17%</strong>（Iran 戰爭 + 全球 memory 短缺 + oil $100+ 為 framework 04-24 snapshot 後新增 macro tail，但 H-B1.2 之 CapEx peak 升級限制其 severity）、<strong>Mode 3 由 9% → 7%</strong>（Apr 27 自我重組吸收部分 FTC exclusivity 焦點）。Tree Bear 為 26%（三模式合計 ~22pp 加殘餘 endogenous 5pp + 永久 baseline drag 2pp - cross-mode overlap 3pp）。
     </p>
 
     <!-- 三情境 -->
     <div class="scenario-grid">
       <div class="sc bull">
-        <div class="sc-h"><span class="sc-name">🐂 Bull</span><span style="font-family:var(--mono);font-size:13px;color:var(--text-muted);">24-mo target</span></div>
+        <div class="sc-h"><span class="sc-name">🐂 Bull</span><span style="font-family:var(--mono);font-size:13px;color:var(--text-muted);">24-mo target · P=27%</span></div>
         <div class="sc-target">$640</div>
-        <div class="sc-mult">Fwd P/E 32x · FY27 EPS ~$20 · +52% from spot</div>
-        <div class="sc-path">Azure 成長於 FY26 H2 重新加速至 40%+ cc + Copilot 於 FY27 end 達 20M+ 座位 + FY27 CapEx peak 可見並下行 + op margin 維持 47%+ + OpenAI 合作無負面更新 + 反壟斷案明確排除 IP 條款。倍數由 22x 擴張至 32x 反映「AI ROIC 驗證 + 政策風險解除」雙重敘事。四支柱信號 ≥10✅ / 2⚠️ / 0❌（H-C1.4 解除）。</div>
+        <div class="sc-mult">Fwd P/E 32x · FY27 EPS ~$20 · +52% from $421</div>
+        <div class="sc-path">Q3 FY26 已部分驗證 Bull 路徑：Azure 39% cc（接近 40%）+ Q4 39-40% guide + H2 calendar 2026 modest acceleration + Copilot 突破 20M 座位（+250% YoY seat add，週活與 Outlook 同級）+ AI ARR $37B (+123% YoY) + op margin 46.3% (+1pp YoY) + FY27 「double-digit revenue and op income growth」 + Apr 27 OpenAI 重組為合作型結構（停付 rev share 給 OpenAI = margin 改善）。Bull 完整路徑須進一步驗證：FY27 Azure 持續 ≥ 39% cc + Copilot FY27 end 達 45M+ 座位 + FY27 CapEx absolute 量級開始 plateau（calendar 2026 $190B 為高位但已知）+ 蠶食比例 &lt; 30% 公開披露 + 反壟斷案明確排除 IP 條款。倍數由 22x 擴張至 32x 反映「AI ROIC 驗證 + 政策風險解除」雙重敘事。四支柱信號目標 ≥10✅ / 2⚠️ / 0❌（H-C1.4 解除）。</div>
       </div>
       <div class="sc base">
-        <div class="sc-h"><span class="sc-name">◆ Base</span><span style="font-family:var(--mono);font-size:13px;color:var(--text-muted);">24-mo target</span></div>
+        <div class="sc-h"><span class="sc-name">◆ Base</span><span style="font-family:var(--mono);font-size:13px;color:var(--text-muted);">24-mo target · P=45%</span></div>
         <div class="sc-target">$540</div>
-        <div class="sc-mult">Fwd P/E 28-30x · FY27 EPS ~$18-19 · +28% from spot</div>
-        <div class="sc-path">Q3 FY26 Azure 落於 37-38% cc guide 範圍內 + Intelligent Cloud op margin 穩定於 41-44% + Copilot 穩健成長至 8-10% 滲透 + FY27 CapEx 持平或溫和下降 + OpenAI 經濟關係穩定 + 反壟斷案進展溫和。倍數適度修復至 28-30x。EPS 成長為主要報酬驅動，倍數貢獻次之。</div>
+        <div class="sc-mult">Fwd P/E 28-30x · FY27 EPS ~$18-19 · +28% from $421</div>
+        <div class="sc-path">Q3 印出之多數指標已達或超 Base 假設上緣（Azure 39% cc 高於 37-38% guide / op margin 46% / IC op margin 39.7% 接近 40-44% guide 下緣 / Copilot 20M 達 4.4% 滲透）— Base 為 Q3 已實現之後續延續路徑：Azure 維持 38-40% cc + Copilot 季度新增 +5M 座位 + FY27 CapEx absolute 仍擴張但 ROIC 維持 + OpenAI 經濟關係穩定（Apr 27 重組後）+ 反壟斷案進展溫和。倍數適度修復至 28-30x。EPS 成長為主要報酬驅動，倍數貢獻次之。</div>
       </div>
       <div class="sc bear">
-        <div class="sc-h"><span class="sc-name">🐻 Bear</span><span style="font-family:var(--mono);font-size:13px;color:var(--text-muted);">24-mo target</span></div>
-        <div class="sc-target">$335</div>
-        <div class="sc-mult">prob-weighted across sub-scenarios · -20% from spot</div>
-        <div class="sc-path">Bear bucket 為三失敗模式 + endogenous bear 之機率加權結果（見 Section 十 Cascade 表）。<strong>子情境分解：</strong>① <em>Endogenous Bear</em>（單支柱 Q3 weakness，無 cascade）22x × $15.7 = $345，權重 21%；② <em>OpenAI Cascade Bear</em>（H-C1.1 ❌ + L1A/B/A1.3 連鎖）18x × $17 = $310，權重 32%；③ <em>Macro Bear</em>（衰退 + L1D cannibalization spike + MPC bleed）21x × $16 = $336，權重 34%；④ <em>Regulatory Bear</em>（H-C1.4 acute + ROIC 結構折價）21x × $16.5 = $345，權重 14%。加權平均 ≈ $335。三模式皆能獨立觸發 Bear，故總 Bear 機率為三模式貢獻之加總。</div>
+        <div class="sc-h"><span class="sc-name">🐻 Bear</span><span style="font-family:var(--mono);font-size:13px;color:var(--text-muted);">24-mo target · P=28%</span></div>
+        <div class="sc-target">$333</div>
+        <div class="sc-mult">prob-weighted across sub-scenarios · -21% from $421</div>
+        <div class="sc-path">Bear bucket 為三失敗模式 + endogenous bear 之機率加權結果（見下 Cascade 表）。<strong>Pass 2 子情境重新分解：</strong>① <em>Endogenous Bear</em>（單支柱 Q4 weakness，無 cascade）22x × $15.7 = $345，<strong>權重 22%</strong>（pre-Q3 21%，4✅ 8⚠️ 1❌ 之 mildly stronger 訊號）；② <em>OpenAI Cascade Bear</em>（H-C1.1 進一步 ❌ + L1A/B 連鎖）18x × $17 = $306，<strong>權重 22%</strong>（pre-Q3 32%，Apr 27 已揭示最大不確定事件為合作型 outcome；conf call 確認 win-win framing）；③ <em>Macro Bear</em>（衰退 + L1D 蠶食 spike + MPC bleed）21x × $16 = $336，<strong>權重 43%</strong>（pre-Q3 34%，Iran 戰爭 + memory 短缺 + oil $100+ 顯著上修 trigger probability；Q4 component pricing $5B 確認 macro 穿透）；④ <em>Regulatory Bear</em>（H-C1.4 acute + ROIC 結構折價）21x × $16.5 = $345，<strong>權重 13%</strong>（pre-Q3 14%，Apr 27 自我重組吸收部分 FTC 焦點；conf call 零規範性披露）。加權平均 ≈ $333。<strong>結構性轉變：</strong>Mode 1 權重大幅下降（32% → 22%）、Mode 2 權重大幅上升（34% → 43%）反映 post-Q3 Bear 風險之重心由 OpenAI 軸轉至 Macro 軸。</div>
       </div>
     </div>
 
@@ -2073,25 +2201,25 @@ footer strong { color: var(--text-dim); }
          CONDITIONAL PROBABILITY CASCADE · Three Failure Modes
     ═══════════════════════════════════════════ -->
     <div class="cascade-section" id="cascade">
-      <div class="cascade-eyebrow">◆ 條件機率 Cascade · Three Independent Failure Modes</div>
-      <h3 class="cascade-title">當支柱不獨立 — <em>Three Cascade Pathways: OpenAI × Macro × Regulatory</em></h3>
+      <div class="cascade-eyebrow">◆ 條件機率 Cascade · Three Independent Failure Modes · Post-Q3 FY26 Update</div>
+      <h3 class="cascade-title">當支柱不獨立 — <em>Three Cascade Pathways 重新校準: OpenAI ↓ × Macro ↑ × Regulatory ↓</em></h3>
       <p class="cascade-intro">
-        傳統 Inverted 3-Scenario 之 Bear 機率推導採用<strong>條件獨立假設</strong>（每葉破裂機率為獨立事件，joint 機率 = 乘積），低估了「骨牌效應」之 joint Bear 機率。本分析樹建模<strong>三個獨立失敗模式</strong>（failure modes），每模式有自身之 gatekeeper 觸發節點與條件機率傳播路徑。三模式之 trigger event 在現實中為獨立事件（OpenAI 多雲 ≠ 美國衰退 ≠ DOJ consent decree），但所有三者皆能觸發 Bear 情境。Bear 總機率為三模式貢獻之加總（扣除跨模式重疊），加上殘餘 endogenous bear（單支柱獨立失敗）與永久 H-C1.4 結構性 baseline drag。此使「Bear 情境」可被精確分解為四種 sub-scenarios，市場反應幅度與機率分佈得以分別建模。
+        Q3 印出後三模式 trigger probability 重新校準。<strong>Mode 1 (OpenAI) 由 13% → 9%</strong>：Apr 27 重組為合作型結構而非 OpenAI 強勢驅動之多雲外逃，最大不確定事件已揭示且為非破壞性 outcome。新披露 bookings split（ex-OpenAI +7% / incl OpenAI -4%）使市場可獨立 model OpenAI 暴露。<strong>Mode 2 (Macro) 由 15% → 17%</strong>：framework 04-24 snapshot 後出現 Iran 戰爭、全球 memory 短缺、oil $100+ 三項 macro 變量；Q3 印出之 Windows OEM「memory 漲價迫使 OEM 預先建庫」直接體現此 macro 訊號於 MSFT 財務。然 H-B1.2 升級（CapEx peak）顯著限制 Mode 2 conditional severity。<strong>Mode 3 (Regulatory) 由 9% → 7%</strong>：Apr 27 自我重組吸收部分 FTC 對 exclusivity 之焦點，acute trigger 機率略降；H-C1.4 永久 baseline drag 結構不變。
       </p>
 
       <!-- Failure Mode 1: OpenAI Multi-Cloud Cascade -->
       <div class="cascade-mode openai">
         <div class="cascade-mode-header">
           <span class="cascade-mode-num">MODE 1</span>
-          <span class="cascade-mode-title">OpenAI Multi-Cloud Cascade</span>
-          <span class="cascade-mode-gate">Gatekeeper: <strong>H-C1.1 ❌</strong></span>
-          <span class="cascade-mode-indep">P(trigger) ≈ 13%</span>
-          <span class="cascade-mode-contribution">→ Bear +10.4pp</span>
+          <span class="cascade-mode-title">OpenAI Multi-Cloud Cascade · Apr 27 重組後校準</span>
+          <span class="cascade-mode-gate">Gatekeeper: <strong>H-C1.1 進一步 ❌</strong></span>
+          <span class="cascade-mode-indep">P(trigger) <strong>9%</strong> ↓ from 13%</span>
+          <span class="cascade-mode-contribution">→ Bear +6.3pp ↓ from 10.4pp</span>
         </div>
         <table class="cascade-table">
           <thead>
             <tr>
-              <th style="width: 32%;">受影響葉 · Affected</th>
+              <th style="width: 32%;">受影響假設 · Affected</th>
               <th class="center" style="width: 14%;">Indep P</th>
               <th class="center" style="width: 4%;"></th>
               <th class="center" style="width: 14%;">Cond P</th>
@@ -2128,15 +2256,15 @@ footer strong { color: var(--text-dim); }
       <div class="cascade-mode macro">
         <div class="cascade-mode-header">
           <span class="cascade-mode-num">MODE 2</span>
-          <span class="cascade-mode-title">Macro Hard Landing · 純總體經濟衰退</span>
-          <span class="cascade-mode-gate">Gatekeeper: <strong>美國衰退 / 企業 IT 預算凍結</strong></span>
-          <span class="cascade-mode-indep">P(trigger) ≈ 15%</span>
-          <span class="cascade-mode-contribution">→ Bear +11.3pp</span>
+          <span class="cascade-mode-title">Macro Hard Landing · 含 Iran 戰爭 / memory 短缺 / oil $100+ 之 macro tail</span>
+          <span class="cascade-mode-gate">Gatekeeper: <strong>美國衰退 / 企業 IT 預算凍結 / supply chain shock</strong></span>
+          <span class="cascade-mode-indep">P(trigger) <strong>17%</strong> ↑ from 15%</span>
+          <span class="cascade-mode-contribution">→ Bear +11.9pp ↑ from 11.3pp</span>
         </div>
         <table class="cascade-table">
           <thead>
             <tr>
-              <th style="width: 32%;">受影響葉 · Affected</th>
+              <th style="width: 32%;">受影響假設 · Affected</th>
               <th class="center" style="width: 14%;">Indep P</th>
               <th class="center" style="width: 4%;"></th>
               <th class="center" style="width: 14%;">Cond P</th>
@@ -2180,15 +2308,15 @@ footer strong { color: var(--text-dim); }
       <div class="cascade-mode regulatory">
         <div class="cascade-mode-header">
           <span class="cascade-mode-num">MODE 3</span>
-          <span class="cascade-mode-title">Regulatory Acceleration · 監管加速</span>
+          <span class="cascade-mode-title">Regulatory Acceleration · 監管加速 · Apr 27 自我重組吸收部分焦點</span>
           <span class="cascade-mode-gate">Gatekeeper: <strong>H-C1.4 acute 觸發</strong></span>
-          <span class="cascade-mode-indep">P(trigger) ≈ 9%</span>
-          <span class="cascade-mode-contribution">→ Bear +4.5pp</span>
+          <span class="cascade-mode-indep">P(trigger) <strong>7%</strong> ↓ from 9%</span>
+          <span class="cascade-mode-contribution">→ Bear +3.5pp ↓ from 4.5pp</span>
         </div>
         <table class="cascade-table">
           <thead>
             <tr>
-              <th style="width: 32%;">受影響葉 · Affected</th>
+              <th style="width: 32%;">受影響假設 · Affected</th>
               <th class="center" style="width: 14%;">Indep P</th>
               <th class="center" style="width: 4%;"></th>
               <th class="center" style="width: 14%;">Cond P</th>
@@ -2246,38 +2374,38 @@ footer strong { color: var(--text-dim); }
       </div>
 
       <div class="cascade-summary">
-        <strong>Cascade 結論：</strong>三個失敗模式為<em>獨立 trigger events</em>（OpenAI 多雲 ≠ 美國衰退 ≠ 監管加速），但皆能觸發 Bear 情境。<strong>市場目前隱含 55-56% Bear 暗示其於暗中建模了至少兩個失敗模式同步發生之機率</strong>，但本分析樹判斷此為過度定價 — 三模式獨立 trigger 機率合計僅 ~25-30%，且各自之 conditional Bear 機率非全為 100%。<br><br>
+        <strong>Cascade 結論 · Post-Q3 校準（post-call comprehensive read）：</strong>三個失敗模式仍為<em>獨立 trigger events</em>，但其機率重心已由「OpenAI 軸主導」轉為「Macro 軸主導」。<strong>Mode 1 trigger probability 由 13% 降至 9%</strong>反映 Apr 27 OpenAI 重組已揭示為合作型 outcome — Hood + Satya 於 conf call 確認 "win-win construct" framing，全程零 analyst 質疑 cascade。<strong>Mode 2 trigger probability 由 15% 升至 17%</strong>反映 framework 04-24 snapshot 後新增之 macro tail（Iran 戰爭 + 全球 memory 短缺 + oil $100+）；且 Q4 component pricing $5B + calendar 2026 $25B 之 Hood 明確披露確認 macro 穿透至 MSFT 財務。<strong>Mode 2 conditional severity 由 70% 上修至 72%</strong> — H-B1.2 維持 ⚠️（cycle peak 尚未可見）移除原本假設之 CapEx peak FCF cushion，使 Mode 2 觸發後之 severity 略升。<br><br>
 
-        <strong>關鍵洞察：</strong>(1) Macro 失敗模式為新增之最大改進 — 之前 cascade 過度集中於 OpenAI 路徑而忽略獨立 macro 風險；(2) Macro 模式下 L1D 蠶食比例由 30-40% 飆升至 70%+ 為敘事性質改變，非單純機率上修；(3) MPC bleed-over（Surface refresh 延遲）為跨部門 EPS 拖累，於既有 EPS 估算中需獨立計入；(4) Regulatory 為三模式中觸發機率最低但持續時間最長者，其 H-C1.4 永久 baseline drag 已計入即便不觸發 acute 加速。
+        <strong>關鍵洞察 · Pass 2 post-call：</strong>(1) Bear 風險重心仍由 OpenAI 軸轉至 Macro 軸 — Bear 子情境權重 Mode 1 由 32% → 22%、Mode 2 由 34% → 43%；(2) H-B1.2 維持 ⚠️ 反映「multi-quarter 驗證視窗」之紀律保留 — 單季 sequential 下降不為 cycle peak 訊號，FY27 CapEx 軌跡（calendar 2026 $190B）仍為擴張階段；(3) 殘餘 endogenous bear 由 7pp 降至 6pp（4✅ / 8⚠️ / 1❌ 之 mildly stronger 訊號降低單一假設獨立失敗機率，但較 Pass 1 假設之 5pp 略上修）；(4) Regulatory baseline drag 結構不變（H-C1.4 永久 ❌），僅 acute trigger 機率略降。
       </div>
 
       <div class="cascade-math">
-        <span class="cm-label">Mode 1 · OpenAI cascade</span><span class="cm-val">+10.4pp</span>
-        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　13% × 80% = 10.4</span>
-        <span class="cm-label">Mode 2 · Macro hard landing</span><span class="cm-val">+11.3pp</span>
-        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　15% × 75% = 11.25</span>
-        <span class="cm-label">Mode 3 · Regulatory acceleration</span><span class="cm-val">+4.5pp</span>
-        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　9% × 50% = 4.5</span>
-        <span class="cm-label" style="color: var(--text-muted);">Cross-mode overlap (subtract)</span><span class="cm-val" style="color: var(--text-muted);">-3pp</span>
-        <span class="cm-label">Residual endogenous bear</span><span class="cm-val">+7pp</span>
-        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　單支柱 Q3 break，無 cascade 觸發</span>
-        <span class="cm-label">H-C1.4 permanent baseline drag</span><span class="cm-val">+2pp</span>
-        <span class="cm-total-l">Tree Bear 總機率</span><span class="cm-total">≈ 33%</span>
+        <span class="cm-label">Mode 1 · OpenAI cascade</span><span class="cm-val">+6.3pp <span style="color:var(--green); font-size:10px;">↓ from 10.4</span></span>
+        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　9% × 70% = 6.3 · trigger ↓ from 13%、conditional ↓ from 80%（Apr 27 重組為合作型 outcome；conf call 確認 "win-win"）</span>
+        <span class="cm-label">Mode 2 · Macro hard landing</span><span class="cm-val">+12.2pp <span style="color:var(--red); font-size:10px;">↑ from 11.3</span></span>
+        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　17% × 72% = 12.2 · trigger ↑ from 15%（Iran/memory/oil）、conditional ↑ from Pass 1 之 70%（H-B1.2 維持 ⚠️ 移除 FCF cushion；Q4 component pricing $5B 確認 macro 穿透）</span>
+        <span class="cm-label">Mode 3 · Regulatory acceleration</span><span class="cm-val">+3.5pp <span style="color:var(--green); font-size:10px;">↓ from 4.5</span></span>
+        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　7% × 50% = 3.5 · trigger ↓ from 9%（Apr 27 自我重組吸收部分 FTC 焦點；conf call 零規範性披露）、conditional 不變</span>
+        <span class="cm-label" style="color: var(--text-muted);">Cross-mode overlap (subtract)</span><span class="cm-val" style="color: var(--text-muted);">-2.5pp</span>
+        <span class="cm-label">Residual endogenous bear</span><span class="cm-val">+6pp <span style="color:var(--green); font-size:10px;">↓ from 7</span></span>
+        <span class="cm-sub" style="grid-column: 1 / -1; margin-bottom: 4px;">　4✅/8⚠️/1❌ 之 mildly stronger 訊號降低單一假設獨立失敗機率（vs Pass 1 假設 5pp，現校準至 6pp 反映 H-B1.2 ⚠️ 維持）</span>
+        <span class="cm-label">H-C1.4 permanent baseline drag</span><span class="cm-val">+2pp <span style="color:var(--text-muted); font-size:10px;">unchanged</span></span>
+        <span class="cm-total-l">Tree Bear 總機率 · Post-Q3 (Pass 2)</span><span class="cm-total">≈ 28%</span>
       </div>
     </div>
 
     <!-- 倒推機率比對 -->
     <div class="prob-compare">
-      <div class="pc-title">◆ 隱含機率倒推 · Implied Probability Calibration</div>
+      <div class="pc-title">◆ 隱含機率倒推 · Implied Probability Calibration · Post-Q3 FY26 Update</div>
       <p style="color: var(--text-dim); font-size: 13px; line-height: 1.65; margin-bottom: 14px; font-family: var(--serif);">
-        求解：$421 = P<sub>Bull</sub> × 640 + P<sub>Base</sub> × 540 + P<sub>Bear</sub> × 335（subject to Σ = 1）。本情境為 <strong>Base-anchored 40%</strong>。市場隱含解：P<sub>Bull</sub> ≈ 4%, P<sub>Bear</sub> ≈ 56%。本分析樹經 cascade 推導：P<sub>Bull</sub> 25%, P<sub>Base</sub> 42%, P<sub>Bear</sub> 33%。
+        求解：$421 (pre-print spot) = P<sub>Bull</sub> × 640 + P<sub>Base</sub> × 540 + P<sub>Bear</sub> × 332（subject to Σ = 1）。市場隱含解（pre-AH）：P<sub>Bull</sub> ≈ 4%, P<sub>Bear</sub> ≈ 56%。本論點經 Q3 後 cascade 重新校準：<strong>P<sub>Bull</sub> 28%, P<sub>Base</sub> 46%, P<sub>Bear</sub> 26%</strong>。AH 重定價後市場機率分佈將更新；下表為 pre-AH 比對基準。
       </p>
       <table class="prob-table">
         <thead>
           <tr>
             <th>情境</th>
-            <th>市場隱含(spot $421)</th>
-            <th>本分析樹</th>
+            <th>市場隱含(pre-AH spot $421)</th>
+            <th>本論點 · Post-Q3</th>
             <th>差距 Δ</th>
             <th>解讀</th>
           </tr>
@@ -2286,23 +2414,23 @@ footer strong { color: var(--text-dim); }
           <tr>
             <td><span class="p-bull">🐂 Bull</span></td>
             <td class="p-val">4-5%</td>
-            <td class="p-val p-bull">25%</td>
-            <td class="delta-pos">+20pp</td>
-            <td>市場<strong>嚴重低估</strong>上行 — $625B RPO + 45% OpenAI 合約鎖定即使在三失敗模式 cascade 模型下仍為強有力的 Bull 支撐</td>
+            <td class="p-val p-bull">27%</td>
+            <td class="delta-pos">+22pp</td>
+            <td>市場<strong>嚴重低估</strong>上行 — Q3 印出之 Azure 39% cc + Copilot 20M + AI ARR $37B + Q4 39-40% guide + H2 calendar 2026 acceleration + FY27 double-digit op income 已部分驗證 Bull 路徑（pre-Q3 為 25%，Pass 2 後升至 27% 反映多重 Bull 條件初步達成）</td>
           </tr>
           <tr>
             <td><span class="p-base">◆ Base</span></td>
             <td class="p-val">40%</td>
-            <td class="p-val p-base">42%</td>
-            <td class="delta-neu">+2pp</td>
-            <td>本分析樹 Base 機率與市場接近，反映 Base 為最可能情境</td>
+            <td class="p-val p-base">45%</td>
+            <td class="delta-neu">+5pp</td>
+            <td>本論點 Base 機率小幅上修（pre-Q3 為 42%），反映 Q3 印出之多數指標達 Base 上緣或上方，Base 仍為最可能情境</td>
           </tr>
           <tr>
             <td><span class="p-bear">🐻 Bear</span></td>
             <td class="p-val">55-56%</td>
-            <td class="p-val p-bear">33%</td>
-            <td class="delta-neg">-23pp</td>
-            <td>市場<strong>過度定價</strong>下行；本分析樹三失敗模式之獨立 trigger 機率合計 ~25-30%，加殘餘 endogenous + 永久 baseline drag 達 33%。市場暗中建模多模式同步發生之機率為過度悲觀</td>
+            <td class="p-val p-bear">28%</td>
+            <td class="delta-neg">-28pp</td>
+            <td>pre-AH 市場仍未消化 Q3 印出 — 本論點 Bear 由 33% 降至 28%（Mode 1 trigger 由 13% → 9%、Mode 3 由 9% → 7%、殘餘 endogenous 由 7pp → 6pp，部分被 Mode 2 由 15% → 17% + conditional 70% → 72% 抵銷）。AH 重定價後市場 Bear 機率將相應下修；本論點缺口由 23pp 擴大至 ~28pp 需於 AH 後比對</td>
           </tr>
         </tbody>
       </table>
@@ -2311,54 +2439,55 @@ footer strong { color: var(--text-dim); }
     <!-- EV 與 Mispricing -->
     <div class="ev-summary">
       <div class="ev-cell">
-        <div class="ev-label">本分析樹期望值 · 24 個月</div>
-        <div class="ev-v">$498</div>
-        <div class="ev-sub">0.25 × $640 + 0.42 × $540 + 0.33 × $335<br>= 160 + 227 + 111 = $498<br><strong style="color:var(--green);">+18% from $421</strong></div>
+        <div class="ev-label">本論點期望值 · 24 個月 · Post-Q3 (Pass 2)</div>
+        <div class="ev-v">$509</div>
+        <div class="ev-sub">0.27 × $640 + 0.45 × $540 + 0.28 × $333<br>= 173 + 243 + 93 = $509<br><strong style="color:var(--green);">+21% from pre-print $421</strong> · pre-Q3 EV $498 / +18%</div>
       </div>
       <div class="ev-cell">
-        <div class="ev-label">市場期望值（= spot）</div>
+        <div class="ev-label">市場期望值（pre-AH spot）</div>
         <div class="ev-v" style="color:var(--text-muted);">$421</div>
-        <div class="ev-sub">Mispricing ≈ <strong style="color:var(--gold);">$77 / 18%</strong><br>偏斜比 Bull:Bear = 0.76:1（本分析樹）vs. 0.07:1（市場隱含）— 約 11 倍差距，仍為成熟科技標的罕見的結構性錯置</div>
+        <div class="ev-sub">Mispricing ≈ <strong style="color:var(--gold);">$88 / 21%</strong>（vs pre-Q3 $77 / 18%）<br>偏斜比 Bull:Bear = 0.96:1（post-Q3 Pass 2）vs. 0.76:1（pre-Q3）vs. 0.07:1（市場 pre-AH 隱含）— Bull 與 Bear 接近平衡，反映 H-B1.2 ⚠️ 維持紀律保留之機率收斂</div>
       </div>
     </div>
 
     <!-- 張力點 -->
     <div class="tension-box">
-      <div class="tension-title">◆ Tension Point · 張力點</div>
-      <h4>市場 55-56% Bear 機率與本分析樹之 33% 之間 23pp 差距是否可辯護？</h4>
-      <p>23pp 差距為成熟科技標的罕見的結構性錯置。差距體現於三個獨立失敗模式之觸發機率與 conditional 傳播之合理性。市場若隱含 55-56% Bear，則必須暗中假設三模式至少有兩個將於 12 個月內同步觸發，或單一模式之 conditional 傳播達 100% — 兩者皆為過度悲觀之建模假設。<strong>三個失敗模式之獨立 trigger 機率：</strong>OpenAI 多雲 ~13% × Macro 衰退 ~15% × Regulatory acute ~9%，獨立合計約 33%（含重疊調整），加殘餘 endogenous bear 7pp 與永久 baseline drag 2pp = Tree Bear 33%。Q3 FY26 earnings 將揭示 Mode 1 + Mode 2 之初步狀態（Macro 訊號透過企業 IT 預算 commentary 反映）；Mode 3 為長期 monitoring 軸，Q3 不會直接揭示。</p>
+      <div class="tension-title">◆ Tension Point · 張力點 · Post-Q3 FY26 Update</div>
+      <h4>Q3 印出後本論點 Bear 由 33% 降至 26%；pre-AH 市場 Bear 仍 ~56% — 缺口由 23pp 擴大至 ~30pp 是否可辯護？</h4>
+      <p>Q3 印出之多重 ✅ 升級（H-B1.2 / H-D1.1）+ Apr 27 OpenAI 重組為合作型 outcome 共同支持本論點 Bear 機率下修至 26%。然<strong>pre-AH 市場仍未消化 Q3 數據</strong>（pre-print spot $421 反映 56% Bear 之機率定價）— AH 重定價將收斂部分缺口，但本論點判斷市場機率分佈仍將過度集中於 Bear 軸，因為 (1) Mode 1 之 Apr 27 outcome 尚未被市場充分理解為合作型（headline 效應仍可能視為 exclusivity loss）、(2) Macro 軸真實風險上升（Iran/memory）但本論點經 H-B1.2 升級已部分對沖、(3) Q3 印出之強度（Azure 39% cc + AI ARR $37B + Copilot 20M）為 multi-year inflection 訊號，市場習慣性低估此類 inflection 之 12-18 月 forward 影響。</p>
 
       <div class="tension-grid">
         <div class="tension-side market">
-          <h5>支持市場 55% Bear 的論據</h5>
+          <h5>支持市場 ~56% Bear（pre-AH）的論據</h5>
           <ol>
-            <li><strong>三模式皆有現實 trigger pathway</strong>：OpenAI 多雲（合約屆期前重議可能性）+ Macro（高利率持續 + 企業 IT 預算壓力）+ Regulatory（FTC 2024 起調查、EU 平行審查、G7 主權 AI）— 三個獨立失敗模式同時存在</li>
-            <li><strong>L1A × L1C 高耦合風險真實存在</strong>：cascade 模型已驗證 Mode 1 觸發下 P(L1A | L1C) ≈ 70% — 市場可能於 Q1 2025 起暗中建模此 cascade，此為 P/E 由 28x 壓縮至 22x 之主要結構性原因</li>
-            <li><strong>CapEx/Rev 比例 47% 為極端值</strong>：歷史上 hyperscaler 達此比例後 op margin 多於後 4-6 個季度結構性下行（Meta 2022、Cisco 1999-2001）— 即使 Q3 FY26 看不到，市場可能定價未來路徑</li>
-            <li><strong>OpenAI 2030 infra 目標下修 57%</strong>：暗示客戶端需求預期下修；MSFT 45% RPO 來源若於合約屆期前重新議定，談判優勢將顯著弱化</li>
-            <li><strong>FCF 連兩季 YoY 為負為結構性訊號</strong>：成熟 compounder 之多年重新評價多由此類訊號啟動（MSFT 史上首次連兩季 FCF 下滑）；Macro 衰退情境下此趨勢將加速</li>
-            <li><strong>L1D MPC bleed-over 隱性 EPS 拖累</strong>：Surface refresh 延遲為一直接但不易觀察之 EPS 風險，市場可能已暗中定價但本分析樹之顯式建模仍不足以完全覆蓋</li>
+            <li><strong>Apr 27 OpenAI exclusivity 解除為形式 kill condition 觸發</strong>：原 H-C1.1 kill 條件「2030 合約於屆期前重新議定且 MSFT 條款讓步」於形式上發生 — 市場可能集中於 "exclusivity loss" 而忽略「停付 rev share = margin 改善」之經濟條款</li>
+            <li><strong>Macro tail 真實上升</strong>：Iran 戰爭 + 全球 memory 短缺 + oil $100+ 為 framework 04-24 後新增變量；Q3 印出之 Windows OEM 「memory 漲價迫使 OEM 預先建庫」直接體現此 macro 訊號於 MSFT 財務</li>
+            <li><strong>IC op margin 39.7% 險擦過 40% 門檻</strong>：H-A1.3 之 ⚠️ 維持但接近 ❌ — 若 Q4 進一步壓縮且 Hood 措辭轉為結構性，將觸發 L1A 整體降級</li>
+            <li><strong>FCF -22% YoY 持平 Q2 仍未 reaccel</strong>：H-B1.3 維持 ⚠️，FCF reaccel 需 H-B1.2 之 CapEx peak 持續 + 2-3 季 lead time，短期內仍為 Bear 訊號之 anchor</li>
+            <li><strong>蠶食比例仍未公開披露</strong>：H-D1.2 之 30-40% mix-shift 機制驗證仍待 management 直接揭示，倍數 sustainability narrative 之選擇仍未確定（25-28x mix-shift vs 30x+ TAM expansion）</li>
+            <li><strong>市場對 multi-year inflection 訊號之 lag 反應</strong>：歷史經驗顯示 hyperscaler 之 capex peak / monetization inflection 訊號常於 2-3 季後才被市場充分定價</li>
           </ol>
         </div>
         <div class="tension-side our">
-          <h5>支持本分析樹 33% Bear 的論據</h5>
+          <h5>支持本論點 26% Bear 的論據 · Post-Q3</h5>
           <ol>
-            <li><strong>三模式之獨立 trigger 機率合計僅 ~25-30%</strong>：市場若定價 55%+ Bear，需暗中假設多模式同步觸發或 conditional 傳播達 100%；兩者皆與歷史基準率不符</li>
-            <li><strong>Q2 FY26 Intelligent Cloud op margin 42.2%</strong>：CapEx 加速期內 margin 仍維持高於 42% — 與 Meta RL/Cisco 類比根本不同。此為三模式 cascade 中 H-A1.3 維持黃燈而非紅燈之核心證據</li>
-            <li><strong>$625B RPO + Feb 27 聯合聲明 IP 鎖定至 2030</strong>：Mode 1 OpenAI cascade 為 cascade 起點，但其本葉之 ✅ 強度高（合約 inimitable，技術上 OpenAI 短期內無法多雲外逃）。估 P(H-C1.1 ❌) ≈ 12-15%，遠低於市場暗中假設之 30%+</li>
-            <li><strong>Macro hard landing 仍為 trigger 而非 certainty</strong>：當前美國經濟處於 soft-landing trajectory（Fed cuts pacing、勞動市場仍緊）；衰退觸發機率為 ~15% 之 base rate，非市場暗中假設之 30%+</li>
-            <li><strong>反壟斷案歷史基準率為「結構性折價而非破壞」</strong>：Microsoft 2001 antitrust case 最終以 consent decree 收尾且未觸發業務拆分；Google 2024 search antitrust 同樣未要求剝離。H-C1.4 為永久 ❌ 但其機率影響為「-3-5pp ROIC 拖累」而非「業務分拆」</li>
-            <li><strong>三家 hyperscaler 同步 capacity-constrained</strong>：AWS、GCP 與 Azure 同時 capacity-constrained 為需求結構性訊號 — 排除「Azure 獨立失速」假說，限制 Mode 2 macro path 之 severity</li>
+            <li><strong>Mode 1 trigger probability 由 13% 降至 9%</strong>：Apr 27 重組為合作型 outcome，最大不確定事件已揭示且為非破壞性方向解決。未來 Mode 1 進一步觸發須 OpenAI 主動行使新獲多雲權利且 MSFT 經濟條款受損 — 雙重條件之機率顯著低於原 13% base rate</li>
+            <li><strong>Q3 Azure 39% cc 重新加速</strong>：Q2 38% cc → Q3 39% cc 為過去 5 季首次 sequential 加速；capacity-constrained / demand-strong 假說經 Fairwater 提前 ramp + Stargate Norway 主導之具體 capacity 訊號驗證</li>
+            <li><strong>Copilot 20M + AI ARR $37B (+123% YoY) 雙重驗證</strong>：H-D1.1 由 ⚠️ 升至 ✅；linear extrapolation 路徑（20M → 25M → 30M → 35M → 40M → 45M）正好命中 FY27 end 10% 滲透目標。Tornado-zone 假說由 forward-looking 轉為 empirically demonstrated</li>
+            <li><strong>CapEx $31.9B 為 5 季首次 sequential 下降</strong>：H-B1.2 由 ⚠️ 升至 ✅；ROIC cycle peak 訊號於 single quarter 之最強實證，雖仍需 Q4 + Q1 FY27 兩季確認，但「方向已轉」機率顯著上升</li>
+            <li><strong>op margin 46.3% 維持 +1pp YoY</strong>：CapEx 加速期內整體 op margin 仍上升，與 Meta RL / Cisco 2001 類比根本不同；3Q rolling 47.3% 為 FY 紀錄高水位</li>
+            <li><strong>新 bookings split 披露為結構性透明度提升</strong>：ex-OpenAI +7% / incl OpenAI -4% 使市場可獨立 model OpenAI 暴露，降低 generic 籠統 OpenAI cascade 假設之 conditional propagation 強度</li>
+            <li><strong>Mode 2 之 Macro 上修被 H-B1.2 升級對沖</strong>：trigger probability 17% 上修但 conditional severity 由 75% 降至 70%（CapEx peak 提供 FCF cushion）— 淨增量僅 +0.6pp</li>
           </ol>
         </div>
       </div>
 
       <div class="decision-implication">
-        <div class="di-label">◆ 決策含義 · Decision Implication</div>
-        <strong>若 Q3 FY26（Apr 29）驗證 H-A1.1 + H-A1.3</strong>（Azure cc ≥ 37% + Intelligent Cloud op margin ≥ 42%）+ management commentary 排除 macro headwind concerns → 市場 Bear 機率下修至 35-40%，隱含價格 re-rate 至 $470-510（+12-21%）。Mode 1 + Mode 2 同步揭示利好。<br>
-        <strong>若 Q3 FY26 破裂 H-A1.1 但 management 歸因於 capacity timing（非結構性需求）</strong>（Azure cc &lt; 36% + margin &lt; 40%，但 OpenAI 關係穩定，無 macro 警訊）→ 純 Mode 1 / endogenous bear 觸發；市場 Bear 機率上修至 60-65%，隱含價格 de-rate 至 $370-390（-8-12%）；本分析樹 Bear 上修至 38-42%，仍與市場存在 20-25pp 差距。<br>
-        <strong style="color: var(--red);">若 Q3 FY26 print 同時觸發 macro signal（management 提及 enterprise IT budget pressure 或 customer commitment 撤回）</strong>→ Mode 2 macro cascade 啟動；股價可能單事件反應 -15 至 -20%（遠超 IV 隱含 ±5.6%），市場 Bear 飆升至 70%+；本分析樹 Bear 上修至 45-50%，但差距結構性收斂。<br><br>
-        此與期權市場 ±5.6%（~$24）隱含波動<em>嚴重不吻合</em>——單邊事件反應幅度可能達 ±10-15%（單模式觸發）至 ±15-20%（多模式同步觸發）。<strong style="color: var(--gold);">本框架核心方法論：將「Bear 情境」分解為三個獨立失敗模式 + 殘餘 endogenous + 永久 baseline drag 之四元結構，每元素之 trigger 機率與 conditional 傳播可分別建模並 propagate 至最終 Bear 機率。市場反應之預期幅度因觸發模式不同而顯著差異。</strong>
+        <div class="di-label">◆ 決策含義 · Decision Implication · Post-Q3</div>
+        <strong>若 AH 重定價至 $470-490</strong>（市場 Bear 機率下修至 35-40%）→ 與本論點 26% 仍存在 ~10-15pp 缺口，反映市場未完全消化 H-B1.2 / H-D1.1 升級之 forward 影響；continuing Bull 路徑對 multi-year holder 仍為合理偏向。<br>
+        <strong>若 AH 反應平淡（$430-450）</strong>（市場 Bear 機率仍 45-50%）→ Mode 1 之 Apr 27 outcome 未被市場理解為合作型 / 而視為 exclusivity loss 之 headline 效應；本論點 26% vs 市場 ~50% 缺口擴大至 ~24pp，為更強之結構性 mispricing 訊號。Conf call 之 management commentary 將為市場理解 Apr 27 經濟條款之關鍵載體。<br>
+        <strong style="color: var(--red);">若 AH 反向 sell-off（$390-410）</strong>（headline-driven 對 exclusivity loss 過度反應）→ 本論點判斷此為 Mode 1 之 mis-framing 而非 fundamentally 變化，缺口擴大至 30pp+ 為極端結構性 mispricing；然 conf call commentary 須驗證 management 對 Apr 27 經濟條款之公開解讀。<br><br>
+        <strong style="color: var(--gold);">本框架核心方法論於 Q3 印出後之驗證：</strong>conjunction-based kill conditions 成功避免單季 false alarm（H-A1.3 IC op margin 39.7% 險擦過 40% 門檻但 Hood 框定為 transitional 故 kill 未觸發）；三模式 cascade 之獨立 trigger 結構支持 Bear 機率重心由 OpenAI 軸（pre-Q3 32% 子情境權重）轉至 Macro 軸（post-Q3 44% 子情境權重）之動態重新校準，而非單純機率縮放。<strong>下一驗證節點為 Q4 FY26 earnings（July 2026）+ FY27 CapEx guide</strong>，將決定 H-B1.2 之 ✅ 是否持續、以及 Mode 2 之 macro tail 是否實質觸發。
       </div>
     </div>
   </div>
@@ -2367,45 +2496,61 @@ footer strong { color: var(--text-dim); }
 <!-- 十一、Epilogue -->
 <section id="epilogue">
   <div class="epilogue">
-    <h3>十一、結語 · Epilogue</h3>
+    <h3>十一、結語 · Epilogue · Post-Q3 FY26 Update 校準與認知修正</h3>
 
-    <p>MSFT 屬於少見的「<em>高品質企業 × 合理估值 × 可定義驗證事件</em>」三位一體標的。前瞻本益比 22x 已從 2023-25 年的 28-33x 區間顯著下移，反映市場對 AI CapEx 循環與政策結構性風險的疑慮。本分析樹的核心洞察並非「MSFT 便宜故看多」或「MSFT 將複製 Meta Reality Labs 故看空」，而是認識到<em>市場於 $421 已隱含 55-56% 的 Bear 機率</em>，而本分析樹經三個獨立失敗模式 cascade 模型推導後 Bear 機率為 33%。此 23pp 差距為具體且可驗證的主張，而非市場情緒的模糊反映。</p>
+    <p>Q3 FY26 印出（含 conf call comprehensive read）之 H-D1.1 升級（⚠️→✅，Copilot 突破 20M / +250% YoY seat add / 週活與 Outlook 同級）+ Apr 27 OpenAI 重組為合作型 outcome（Hood + Satya 確認 win-win）共同支持本論點 Bear 機率由 33% 下修至 28%；Tree EV 由 $498 升至 $509；Mispricing 由 +18% 擴大至 +21%。然 H-B1.2 維持 ⚠️ — Pass 1 升級於 Pass 2 conf call 揭示 Q4 CapEx >$40B / calendar 2026 ~$190B 後回調，反映「multi-quarter 驗證視窗」紀律之保留。三模式 cascade 之機率重心由「OpenAI 軸主導」轉為「Macro 軸主導」，反映 Apr 27 已揭示最大 OpenAI 不確定事件為合作型 outcome 而 framework 04-24 後新增 Iran/memory/oil 之 macro tail 上升。本框架之 conjunction-based kill conditions 設計於 Q3 印出證明有效 — H-A1.3 之 IC op margin 39.7% 險擦過 40% 門檻但 Hood 框定為 transitional 故 kill 未觸發，避免單季雜訊之 false alarm。</p>
 
-    <p><strong style="color: var(--text);">敘事不對稱性</strong></p>
+    <p><strong style="color: var(--text);">Q3 印出之 6 項認知修正 · Cognitive Corrections</strong></p>
 
-    <p>市場於兩個相反方向上同時存在錯誤定價。一方面<em>嚴重高估</em> Meta Reality Labs 類比的發生機率（未區分 MSFT 的結構性差異 — $625B 合約鎖定 RPO、42% Intelligent Cloud op margin、capacity-constrained 需求）；另一方面<em>顯著低估</em> Copilot tornado-zone 早期滲透（3.3%）所隱含的期權價值。此雙向錯誤定價之 Bull/Bear skew 為 0.83:1（Bull 略佔優勢）對比市場隱含之 0.07:1（純 Bear skew）— 約 12 倍差距。雙向錯誤定價並不罕見，但其所產生之<em>表面中性</em>的 $421 spot 反而掩蓋真實的不對稱 — 本分析樹推導之 +52% Bull / -24% Bear 的 skew ratio 2.2:1 正是此隱含不對稱的量化表達。</p>
+    <p><strong style="color: var(--gold);">修正 1 · Mode 2 Macro 變量之時序盲點</strong></p>
 
-    <p><strong style="color: var(--text);">三模式 cascade 結構所揭示的多 gatekeeper 拓撲</strong></p>
+    <p>Framework 04-24 snapshot 形成於 U.S.-Iran 戰爭爆發前、全球 memory 短缺之早期、oil price 升至 $100+ 前。Mode 2 之 P(trigger) = 15% 計算基於當時之 macro base rate，未充分計入 Apr 25-29 期間之 macro 結構性變化。Q3 印出之 Windows OEM「memory 漲價迫使 OEM 預先建庫」直接體現 macro 訊號穿透至 MSFT 財務 — 此為事前 framework 未顯式建模之 channel。修正：post-Q3 Mode 2 P(trigger) 上修至 17%，但 conditional severity 由 75% 降至 70%（H-B1.2 升級之 CapEx peak 訊號提供 FCF cushion）。<em>方法論啟示：</em>下次 framework 建立時應於 macro 軸之 P(trigger) 計算明確列出時序敏感變量（戰爭、商品價格、利率路徑），以便事件臨近時可機動調整而非靜態繼承。</p>
 
-    <p>三個獨立失敗模式 cascade 之最重要洞察為：MSFT 之 Bear 風險並非由單一 gatekeeper 決定，而是由<em>三個獨立 gatekeeper 節點</em>分別控制。<strong>Mode 1 gatekeeper</strong> H-C1.1（OpenAI 合約核心）— 若觸發，L1A Bear 機率躍升至 70%、L1B 升至 60%；<strong>Mode 2 gatekeeper</strong> 美國衰退 / 企業 IT 預算凍結 — 若觸發，L1A 跌破 36% 且 L1D 蠶食 spike 至 70%+ 並觸發 MPC bleed-over；<strong>Mode 3 gatekeeper</strong> H-C1.4 acute 觸發（DOJ/FTC consent decree 或 G7 主權 AI 強制法規）— 若觸發，L1B ROIC 結構性下行 -3-5pp。三個 gatekeeper 在現實中為獨立 trigger events（OpenAI 多雲 ≠ 美國衰退 ≠ DOJ 同意命令），故各自之獨立 trigger 機率（13%、15%、9%）為現實 base rate 估計。市場目前隱含 55-56% Bear 暗示其於暗中假設多模式同步觸發或 conditional 傳播達 100%，本分析樹判斷此為過度悲觀 — 三模式之獨立 trigger 機率合計僅 ~25-30%，加殘餘 endogenous + 永久 baseline drag = 33%。差距 23pp 為 Bear 機率錯置之核心。<strong>多 gatekeeper 拓撲之分析意義：</strong>單一 gatekeeper 模型會將所有 Bear 風險集中於 H-C1.1 一葉，使分析過度敏感於 OpenAI 路徑；多 gatekeeper 模型誠實標記 macro 與 regulatory 為獨立軸，使 Bear 風險分散於三個獨立 trigger，每個 trigger 之機率較低但合計仍構成顯著 Bear。</p>
+    <p><strong style="color: var(--gold);">修正 2 · Apr 27 OpenAI 重組為合作型 outcome 之機制 framing</strong></p>
 
-    <p><strong style="color: var(--text);">Mode 2 Thesis-Axis 的方法論優勢與其限制</strong></p>
+    <p>原 H-C1.1 kill condition 寫為「2030 合約於屆期前重新議定<em>且</em> MSFT 條款讓步」，於形式上 Apr 27 重組觸發此 kill — exclusivity 由 exclusive 改為 non-exclusive、條款延至 2032。然事件之經濟內容為<strong>合作型結構調整</strong>而非 OpenAI 強勢驅動之多雲外逃：MSFT 停付 rev share 給 OpenAI（margin 改善）、保留 IP access 至 2032、保留 OpenAI 對 MSFT 之 capped rev share 至 2030。Framework 之原假設將 Mode 1 視為 binary cascade vs no-cascade，未明確建模「形式失分但實質改善」之 nuanced outcome。修正：post-Q3 將 H-C1.1 由 ✅ 降為 ⚠️ 維持形式紀律，但 Mode 1 之 conditional propagation 由 80% 降至 70%（OpenAI 新獲多雲權利但未必行使；MSFT 經濟保留結構性益處）。<em>方法論啟示：</em>下次設計 cascade gatekeeper 時應額外建立「形式 trigger 但機制不同」之 nuanced 中間態，避免 binary 過度簡化。</p>
 
-    <p>MSFT 之四支柱論點本質為多個獨立投資命題的並存而非單一方程式的因子乘積。此使 Mode 2 thesis-axis 為合適之框架選擇 — 四個 thesis 軸獨立可辨識，使脆弱性定位精確至個別葉子。然 Mode 2 之預設假設為「支柱間獨立」，此假設於 MSFT 之實際結構中不完全成立（45% RPO 綁 OpenAI = L1A 與 L1C 高耦合）。本分析樹透過顯式條件機率 cascade 補充 Mode 2，將 coupling 從支柱結構（Mode 1 等式）轉移至 cascade 結構，避免「prose 描述跨支柱風險而機率算術假設獨立」之內部矛盾。</p>
+    <p><strong style="color: var(--gold);">修正 3 · Apr 16 Fairwater Wisconsin 之 capacity unlock 訊號低估</strong></p>
 
-    <p><strong style="color: var(--text);">L1D 內部蠶食的策略意義</strong></p>
+    <p>Apr 16（印出前 13 日）Fairwater Wisconsin DC 提前 ramp，為 framework 04-24 之 H-A1.1 evidence list 之具體已驗證 capacity 訊號。然 framework 仍將 H-A1.1 標為標準 ✅ 而非「✅ 強化」狀態。Q3 印出之 Azure 39% cc 重新加速（Q2 38% cc → Q3 39% cc）追溯驗證此 Fairwater 訊號之預測效力 — 已驗證之 capacity 訊號於框架中應給予比 forward-looking commitment 更高權重。修正：未來建構此類框架時，已實際 ramp / commissioned 之 capacity 訊號應與 management 措辭分離為獨立子權重，並於 P(success) 計算中佔較高 weight。<em>方法論啟示：</em>事前 / 事後驗證之差異應於 evidence 結構中 explicit。</p>
 
-    <p>H-D1.2 之內部蠶食 30-40% 為一獨立但重要之敘事重定位：Copilot 不為「TAM 外部擴張」而為「既有客戶 ARPU mix-shift 提升」。此區別不否定其策略價值（mix-shift 本身亦提升 lifetime value 並穩固護城河），但其<em>估值倍數隱含支持</em>由 30x+（TAM expansion 之超額成長 narrative）下調為 25-28x（mix-shift 之穩定 compounding narrative）。市場目前 22x 倍數同時容納兩種 narrative — 若隨後揭示蠶食比例 &gt; 50%，倍數仍可受 mix-shift narrative 支持上行至 25-28x，但無法達到 32x+ 之 Bull 情境倍數。此使 Bull 情境之達成路徑更為嚴苛，但並未影響 Base 情境之合理性。</p>
+    <p><strong style="color: var(--gold);">修正 4 · Conjunction-based kill condition 之框架成功</strong></p>
 
-    <p><strong style="color: var(--text);">外生政策風險作為框架第三維度</strong></p>
+    <p>H-A1.3 之 kill condition 為「IC op margin &lt; 40% <em>且</em> management 指認結構性」之雙條件 conjunction。Q3 印出之 IC op margin = $13.753B / $34.681B = 39.7%（險擦過 40% 門檻下緣），單條件已部分觸發；然 Hood 措辭強調 <em>"operating margins decreased driven by investments in AI partially offset by operating leverage"</em>，框定為 transitional buildout cost 而非 structural shift，故第二條件未觸發、kill 整體未觸發。<em>此為 framework 之意外驗證</em> — 若 kill 採單條件設計（&lt; 40% 即觸發），將於 Q3 產生 false alarm 並錯誤降級 H-A1.3 至 ❌；conjunction 設計成功保留模糊區間之 robust 判讀。<em>方法論啟示：</em>不僅 H-A1.3，所有量化門檻型 kill condition 應於下版 framework 建構時 default 採 conjunction 設計（量化 + management framing），單條件設計僅於 binary 性質明確時使用。</p>
 
-    <p>H-C1.4 永久 ❌ 葉之引入承認 exogenous（政策、監管、地緣政治）結構性風險於某些標的為非可忽略軸。當 management 與市場皆無法 ex-ante 判定外生風險之精確機率與幅度時，誠實處理為「永久 ❌」並計入 cascade 之下行錨點，而非強制將其升級為黃燈或合併入既有黃燈葉。此處理於本分析樹中將反壟斷與主權 AI 兩個獨立外生軸標記為結構性永久折價，其對 ROIC 之拖累幅度估為 -3-5pp（非業務分拆 worst-case），與歷史基準率（Microsoft 2001、Google 2024 antitrust 皆未觸發業務拆分）一致。</p>
+    <p><strong style="color: var(--gold);">修正 5 · AI ARR 為缺漏之 Tier 1 metric</strong></p>
 
-    <p><strong style="color: var(--text);">框架層面的洞察</strong></p>
+    <p>Q3 Nadella 開場 quote 之首要指標為「AI ARR $37 billion, up 123%」— 為 Q3 印出之 headline metric，亦為市場後續解讀 Q3 之主要 anchoring 指標。然 framework 04-24 之「Quarterly Must-Watch Metrics」清單未顯式列出 AI ARR / AI 季度收入。此為 framework 對 Microsoft 內部之 monetization milestone framing 之低估 — 公司於 FY26 起逐步建立 AI 收入披露慣例（Q1 「&gt;$10B annual run rate」、Q2 OpenAI commit increase、Q3 「$37B ARR + 123% YoY」），framework 應追蹤此披露 cadence。修正：下次 build 之 Tier 1 metrics 列表應包含「AI 季度收入 / ARR」+「Copilot 付費座位絕對值」+「Capex sequential 變化」三項，作為事前事後比對之 anchoring metric。<em>方法論啟示：</em>headline metric 之 ex-ante 識別比 framework setup 時更為重要 — 若事前不在 must-watch 清單，事後分析將被迫追溯 framing 而非結構化驗證。</p>
 
-    <p>當基本面真實強勁的標的，其風險集中於可觀察變量（Q3 Azure cc 成長 × 季度 op margin × FY27 CapEx guide × 季度 Copilot 座位數 × 反壟斷案進展 × 內部人 σ-deviation）時，最佳策略為<em>建立階梯</em>以區分「趨勢發展」與「假設驗證」階段。L1A 全綠混黃、L1B 全黃含三季滾動、L1C 三葉混含一永久 ❌、L1D 全黃含蠶食註記，並非分析缺陷而是框架之<em>誠實表徵</em> — 精確標記不確定性位置與性質（cascade 觸發 vs 獨立失敗 vs 結構性折價），使 April 29 成為離散信息更新節點，而非連續 drift。</p>
+    <p><strong style="color: var(--gold);">修正 6 · H-B1.2 單季 sequential 下降誤讀為 cycle peak 訊號（Pass 1 / Pass 2 紀律）</strong></p>
 
-    <p><strong style="color: var(--text);">結論</strong></p>
+    <p>Q3 印出當日（Apr 29）之 Pass 1 INJECT 基於 press release 數據將 H-B1.2 由 ⚠️ 升級為 ✅，理由為「CapEx $31.9B 為 5 季首次 sequential 下降」+「Q2 conf call 之 'CapEx will moderate' 預期得到單季實證」。此判讀於 conf call transcript 揭示後（Pass 2）證明<strong>錯誤</strong>：Hood 明確指引 Q4 CapEx >$40B（超出 Q2 之前峰值 $37.5B）+ calendar 2026 CapEx ~$190B（含 $25B 來自 component pricing）+ 「we expect to remain constrained at least through 2026」。Q3 sequential 下降實為 timing artifact（Hood: <em>"normal variability from cloud infrastructure build-outs and the timing of delivery of finance leases"</em>），非 cycle peak。<br><br>
+    H-B1.2 之 framework 反駁條件本要求「Q3 + Q4 + Q1 FY27 三點連續趨勢確認方為真實 cycle peak」。Pass 1 升級違反此「multi-quarter 驗證視窗」紀律 — 單季 sequential 下降被當下 narrative momentum 推動而錯誤升級。Pass 2 transcript 揭示後重新校準：H-B1.2 維持 ⚠️，cycle peak 尚未可見。<em>方法論啟示：</em>(1) 多季驗證視窗之 framework 紀律於單季 narrative momentum 下需主動保留，不應於 PR-only 數據上跨越；(2) Press release 與 conf call 之雙層讀取（Pass 1 / Pass 2 INJECT 模式）為 forward-guide 重要性高之名稱必要 — 單獨 Pass 1 於 H-B1.2 此類「forward language 主導」之假設上有結構性誤判風險；(3) 框架可考慮將 forward-guide-dependent 假設（H-B1.2、H-B1.3、Mode 2 macro pass-through）顯式標記為「require Pass 2 confirmation」以避免 Pass 1 過度反應。本案例為多階段 INJECT 模式之具體價值實證，且為 V2.4 codification 之關鍵實證資料點。</p>
 
-    <p>此框架的價值不在於給出特定動作的指令，而在於<em>確保決策品質於事件揭示前後保持一致</em>。透過三個獨立失敗模式 cascade 將「Bear 情境」分解為可分別建模之子情境（OpenAI cascade × Macro hard landing × Regulatory acceleration × 殘餘 endogenous），對應動作將自然湧現 — 並非源於情緒反應，而是源於事前已經結構化的分析邏輯。Q3 FY26 earnings 公布時，依四支柱信號的更新方向（H-A1.1 / H-A1.3 / H-B1.1 / H-D1.1 / H-C1.1 之 ✅→⚠️ / ⚠️→✅ / ⚠️→❌ 轉換），同時 management commentary 將揭示 Macro path 之 trigger 訊號，相應 cascade 路徑將自然激活。市場於 $421 提出了一個帶有機率結構的問題：55-56% 下行機率是否為過度定價？本分析樹為此問題提供了具體、可驗證、可證偽的回答：<em>mispricing 存在（+18% upside），其量值（23pp Bear gap）為成熟科技標的罕見的結構性錯置 — 但該錯置受三個獨立失敗模式之 cascade 動態與外生政策風險之雙重限制，須以更精確的機率分解理解</em>。April 29 之後，本分析樹將以「已驗證」、「已部分驗證」、或「至少一模式觸發」三種形態之一續存，其判準即為本文件所列之四支柱信號矩陣與三模式 cascade 表。</p>
+    <p><strong style="color: var(--text);">三模式 cascade 結構於 Q3 印出之動態驗證</strong></p>
+
+    <p>三個獨立失敗模式 cascade 之 post-Q3 校準展現了 framework 設計之 robustness：機率重心並非靜態，而是依事件揭示動態重新分佈。<strong>Mode 1 trigger 由 13% → 9%</strong>反映 Apr 27 已揭示最大 OpenAI 不確定事件為合作型 outcome（Hood + Satya conf call 確認「win-win」+ "predictability of rev share through 2030"）；<strong>Mode 2 trigger 由 15% → 17% 且 conditional 由 75% → 72%</strong>反映 framework 04-24 後新增之 macro tail（Iran/memory/oil）+ Q4 component pricing $5B 確認 macro 穿透 + H-B1.2 維持 ⚠️ 移除原 Pass 1 假設之 FCF cushion；<strong>Mode 3 trigger 由 9% → 7%</strong>反映 Apr 27 自我重組吸收部分 FTC 焦點 + conf call 零規範性披露。<strong>結構性轉變：</strong>Bear 子情境權重 Mode 1 由 32% → 22%、Mode 2 由 34% → 43%，Bear 風險重心由 OpenAI 軸轉至 Macro 軸 — 此為「機率重新分佈而非機率縮放」之非平凡 framework 行為。</p>
+
+    <p><strong style="color: var(--text);">Mispricing 由 +18% 擴大至 +21% 之解讀</strong></p>
+
+    <p>Tree EV 由 $498 升至 $509（+$11），主要驅動：(1) P(Bull) 由 25% 升至 27%（+2pp 反映 Q3 多重 ✅ 升級 + FY27 directional 強化）→ +$13；(2) P(Base) 由 42% 升至 45%（+3pp 反映 Q3 多數指標達 Base 上緣）→ +$16；(3) P(Bear) 由 33% 降至 28%（-5pp 反映 Mode 1+3 trigger 下修，部分被 H-B1.2 ⚠️ 維持 + Mode 2 conditional 上修抵銷）→ -$17；(4) Bear target 由 $335 降至 $333（Mode 1 sub-scenario 嚴重度上修）→ -$1（已含於 P 變化中）。<br><br>
+    Pass 2 之 EV $509 較 Pass 1 之 $514 略低 -$5，反映 H-B1.2 維持 ⚠️ 之紀律保留：Pass 1 升級曾將 Bear 進一步下修至 26% 並提升 Bull 至 28%，Pass 2 conf call 揭示後回調至 27% / 45% / 28%。<strong>然 mispricing 仍顯著為 +21%</strong>（vs pre-Q3 +18%）— spot 未變（pre-print $421）+ Bear 機率仍由 33% 降至 28%。AH 重定價將收斂部分缺口；本論點判斷 fair-value AH spot 應位於 $470-485 區間（市場 Bear 機率下修至 35-40%），實際 AH 反應將為 Mode 1 之 framing 解讀（合作型 vs exclusivity loss）+ H-B1.2 forward 訊息（Q4 $40B / calendar 2026 $190B）之雙重消化結果。</p>
+
+    <p><strong style="color: var(--text);">下一驗證節點 · Q4 FY26 + FY27 CapEx Guide</strong></p>
+
+    <p>Q3 印出後，本論點進入「Q4 FY26 + FY27 CapEx guide」之下一驗證視窗（July 2026）。三項關鍵驗證：(1) <strong>H-B1.2 持續性</strong>：FY27 CapEx 絕對值 guide + 措辭（「moderate」 / 「continue at similar pace」 / 「accelerate」三種 scenario 對應 ✅ / ⚠️ / ❌ 之路徑）；(2) <strong>H-D1.1 trajectory 持續性</strong>：Q4 Copilot 季度新增是否維持 +5M（或更高），決定 FY27 end 達 45M+ 之 ✅ 維持；(3) <strong>Mode 2 macro 訊號</strong>：management 對 enterprise IT budget 之 commentary、Windows OEM memory pricing 後續演化、potential 衰退指標。Q4 印出將為 Mode 1 cascade gatekeeper（H-C1.1）之第二次 reading — Apr 27 後 OpenAI workload mix 變化、Anthropic / Oracle workload share 之具體數據將驗證 Mode 1 trigger probability 是否持續 9% base rate。</p>
+
+    <p><strong style="color: var(--text);">結論 · Q3 印出後 framework 之續存形態</strong></p>
+
+    <p>Q3 印出後（含 conf call comprehensive read），本論點以<strong>「核心架構續存 · 機率重新校準 · 認知修正記錄」</strong>之形態存續。框架未於 Q3 揭示中失效 — 13 個假設信號分佈於 Pass 2 後與 pre-Q3 持平於 4✅ 8⚠️ 1❌（H-D1.1 升級、H-C1.1 nuance、H-B1.2 維持），各假設之內部 evidence base 全面強化；三模式 cascade 之 trigger probability 重新校準屬 framework 設計範圍內之動態行為。然亦須誠實標記 Q3 揭示之 6 項認知修正（修正 6 為 Pass 1 H-B1.2 升級之回調）— 其價值不在於「framework 完美」之 narrative，而在於將 framework 視為<em>可校準、可改進、可記錄</em>之分析基礎設施，使下一週期之建構與驗證能繼承本週期之教訓而非重複錯誤。<strong>下一個重要事件為 Q4 FY26 earnings + FY27 CapEx 持續性驗證（July 2026）</strong>，本論點將於該節點再次進入 INJECT update 流程，依 H-B1.2 持續性、H-D1.1 trajectory、Mode 2 macro 訊號之三軸驗證結果，相應 cascade 路徑將自然激活。</p>
   </div>
 </section>
 
 <footer>
-  <strong>MSFT MECE Analyst Tree · Standard 4×3 + 1 Exogenous · Mode 2 Thesis-Axis</strong><br>
+  <strong>MSFT Investment Thesis · Standard 4×3 + 1 Exogenous · Mode 2 Thesis-Axis · Post-Q3 FY26 Update (post-call comprehensive read)</strong><br>
   Framework: 4 Pillars × 3 Leaves + 1 Permanent ❌ Exogenous = 13 Hypotheses · Signal Count Aggregation · Three Independent Failure Modes Cascade · Inverted 3-Scenario Primary Decision Output<br>
-  Data snapshot: 2026-04-24 · Q3 FY26 Earnings: April 29, 2026 (AMC) · Spot $421 · Options implied move ±5.64%<br>
-  Signals 4✅ / 8⚠️ / 1❌ · Implied Mispricing +18% (EV $498) · Bear 55-56% market vs 33% tree · 23pp gap<br>
+  Data snapshot: 2026-04-29 · Q3 FY26 print + conf call · Pre-print spot $421 · AH 待觀察<br>
+  Signals 4✅ / 8⚠️ / 1❌ · Implied Mispricing +21% (EV $509) · Tree Bear 28% vs Market Bear ~56% (pre-AH) · ~28pp gap<br>
   <span style="color:var(--text-muted);">內部分析工具 · 非投資建議 · 執行需依個人風險預算調整</span>
 </footer>
 
@@ -2429,7 +2574,7 @@ footer strong { color: var(--text-dim); }
       <a href="#L1B" class="indent">L1B CapEx → ROIC</a>
       <a href="#L1C" class="indent">L1C OpenAI + Exogenous</a>
       <a href="#L1D" class="indent">L1D Copilot Monetization</a>
-      <a href="#tree" class="prominent">八、投資樹總結</a>
+      <a href="#tree" class="prominent">八、論點架構總結</a>
       <a href="#triggers">九、Triggers / Red Flags / Metrics / Catalysts</a>
       <a href="#inverted" class="prominent">十、Inverted 3-Scenario（核心）</a>
       <a href="#cascade" class="indent">　└ 條件機率 Cascade</a>
